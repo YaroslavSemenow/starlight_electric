@@ -1,0 +1,17 @@
+.site-logo {
+  display: block;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.site-logo--dark {
+  color: #000000;
+}
+
+.site-logo--light {
+  color: var(--third-text-color);
+}
