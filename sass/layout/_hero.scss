@@ -1,6 +1,5 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 15px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -12,18 +11,27 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/hero-background.jpg);
+    url(/images/hero/mob/hero-background.jpg);
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }

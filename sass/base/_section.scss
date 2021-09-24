@@ -1,4 +1,28 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section--hidden-for-mob-tab {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.section--hidden-for-mob {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.section--no-padding-top {
+  padding-top: 0;
 }
