@@ -1,15 +1,28 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
