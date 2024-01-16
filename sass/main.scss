@@ -1,22 +1,19 @@
+// utils
 @import "./utils/vars";
-@import "./base/reset";
 @import "./utils/hidden";
-@import "./base/container";
-@import "./components/section-title";
+
+// base
+@import "./base/reset";
 @import "./base/section";
+@import "./base/container";
+
+// components
 @import "./components/btn";
-@import "./components/site-logo";
-@import "./components/socials";
-@import "./layout/mobile-menu";
-@import "./layout/page-header";
-@import "./layout/hero";
-@import "./layout/advantage";
-@import "./layout/specification";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/portfolio-filter";
-@import "./layout/portfolio-set";
-@import "./layout/footer";
+
+// layout
 @import "./layout/backdrop";
-@import "./layout/modal";
+@import "./layout/hero";
+@import "./layout/mobile-menu";
 @import "./layout/modal-form";
+@import "./layout/modal";
+@import "./layout/page-header";

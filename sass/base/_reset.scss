@@ -1,9 +1,11 @@
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
+@import url(../utils/_vars.scss);
 
-  background-color: var(--primary-bcg-color);
+body {
+  font-family: "Inter Tight", sans-serif;
+  color: $darkTextColor;
+  letter-spacing: 1.5;
+
+  background-color: $lightBackgroundColor;
 }
 
 h1,

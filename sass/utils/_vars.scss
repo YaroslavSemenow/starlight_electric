@@ -1,11 +1,16 @@
-:root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --third-text-color: #ffffff;
-  --accent-color: #2196f3;
-  --primary-bcg-color: #ffffff;
-  --secondary-bcg-color: #f5f4fa;
-  --third-bcg-color: #2f303a;
-  --transition-duration: 250ms;
-  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// text
+$darkTextColor: #15161a;
+$lightBackgroundColor: #ffffff;
+$accentBackgroundCOlor: #64B500;
+
+// background
+$darkBackgroundColor: #15161a;
+$lightBackgroundColor: #ffffff;
+$accentBackgroundColor: #64B500;
+$additionalBackgroundColor: #8C8C8C;
+
+//other
+$secondaryFontFamily: "Unbounded", sans-serif;
+$thirdFontFamily: "Inter", sans-serif;
+$transitionDuration: 250ms;
+$transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
