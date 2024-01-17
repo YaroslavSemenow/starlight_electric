@@ -3,9 +3,13 @@
 body {
   font-family: "Inter Tight", sans-serif;
   color: $darkTextColor;
-  letter-spacing: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
 
   background-color: $lightBackgroundColor;
+
+  box-sizing: border-box;
 }
 
 h1,
@@ -34,4 +38,5 @@ img {
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }

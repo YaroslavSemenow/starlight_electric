@@ -5,11 +5,49 @@
   top: 0;
   left: 0;
 
-  height: 80px;
+  padding: 12px 0;
   width: 100%;
 
   transition: background-color $transitionDuration $transitionTimingFunction;
-}
 
-// .page-header__container {
-// }
+  &__container {
+    height: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation {
+    margin-right: 56px;
+  }
+
+  .navigation__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navigation__item {
+    font-weight: 500;
+    color: $lightBackgroundColor;
+
+    transition: color $transitionDuration $transitionTimingFunction;
+
+    &:hover {
+      color: $accenTextColor;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}

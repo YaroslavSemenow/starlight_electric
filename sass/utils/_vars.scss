@@ -1,7 +1,7 @@
 // text
 $darkTextColor: #15161a;
-$lightBackgroundColor: #ffffff;
-$accentBackgroundCOlor: #64B500;
+$lighTextColor: #ffffff;
+$accenTextColor: #64B500;
 
 // background
 $darkBackgroundColor: #15161a;
@@ -9,8 +9,11 @@ $lightBackgroundColor: #ffffff;
 $accentBackgroundColor: #64B500;
 $additionalBackgroundColor: #8C8C8C;
 
-//other
+//fonts
 $secondaryFontFamily: "Unbounded", sans-serif;
 $thirdFontFamily: "Inter", sans-serif;
+
+//other
+$borderRadius: 5px;
 $transitionDuration: 250ms;
 $transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);

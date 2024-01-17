@@ -1,0 +1,36 @@
+@import url(../utils/_vars.scss);
+
+.contact-component {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &:hover &__icon {
+    background-color: $accentBackgroundColor;
+  }
+
+  &:hover &__text {
+    color: $accenTextColor;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: $borderRadius;
+    background-color: $additionalBackgroundColor;
+
+    transition: all $transitionDuration $transitionTimingFunction;
+  }
+
+  &__text {
+    font-weight: 600;
+    color: $lighTextColor;
+
+    transition: all $transitionDuration $transitionTimingFunction;
+  }
+}
