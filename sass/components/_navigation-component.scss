@@ -1,0 +1,25 @@
+@import url(../utils/_vars.scss);
+
+// .navigation-component {
+// }
+
+.navigation-component__list {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-component__link {
+  color: $darkTextColor;
+  font-weight: 600;
+
+  transition: color $transitionDuration $transitionTimingFunction;
+}
+
+.navigation-component__link--light {
+  color: $lightBackgroundColor;
+  font-weight: 500;
+  
+  &:hover {
+    color: $accenTextColor;
+  }
+}

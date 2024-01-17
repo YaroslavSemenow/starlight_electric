@@ -19,16 +19,16 @@
         <div class="page-header__inner">
           <div class="page-header__left">
             <a href="./index.html" class="link">
-              <img src="./images/logo.svg" alt="Railcon Hots S.P.K" />
+              <img src="./images/logo-light.svg" alt="Railcon Hots S.P.K" />
             </a>
           </div>
 
           <div class="page-header__right">
-            <nav class="navigation">
-              <ul class="navigation__list">
+            <nav class="page-header__navigation">
+              <ul class="navigation-component__list">
                 <li>
                   <a
-                    class="link navigation__item"
+                    class="link navigation-component__link navigation-component__link--light"
                     href="./catalog.html"
                     rel="noopener noreferrer"
                     >Каталог продукції</a
@@ -36,7 +36,7 @@
                 </li>
                 <li>
                   <a
-                    class="link navigation__item"
+                    class="link navigation-component__link navigation-component__link--light"
                     href="./about-us.html"
                     rel="noopener noreferrer"
                     >Про нас</a
@@ -44,7 +44,7 @@
                 </li>
                 <li>
                   <a
-                    class="link navigation__item"
+                    class="link navigation-component__link navigation-component__link--light"
                     href="./contacts.html"
                     rel="noopener noreferrer"
                     >Контакти</a
@@ -59,12 +59,22 @@
                   <img src="./images/mail.svg" alt="Railcon Hots S.P.K" />
                 </span>
               </a>
-              <a class="contact-component link" href="mailto:mail@mail.com">
+              <a class="contact-component link" href="tel:48690402690">
                 <span class="contact-component__icon">
                   <img src="./images/phone.svg" alt="Railcon Hots S.P.K" />
                 </span>
                 <span class="contact-component__text">+48 690-402-690</span>
               </a>
+            </div>
+
+            <button class="button page-header__button" type="button">
+              Замовити продкцію
+            </button>
+
+            <div class="page-header__localisation">
+              <img src="./images/earth.svg" alt="Railcon Hots S.P.K" />
+              <span class="page-header__localisation-text">Ua</span>
+              <img src="./images/arrow-bottom.svg" alt="Railcon Hots S.P.K" />
             </div>
           </div>
         </div>
@@ -119,7 +129,88 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-first">
+          <img src="./images/logo-dark.svg" alt="Railcon Hots S.P.K" />
+        </div>
+        <div class="footer-second">
+          <nav>
+            <ul class="navigation-component__list">
+              <li>
+                <a
+                  class="link navigation-component__link"
+                  href="./catalog.html"
+                  rel="noopener noreferrer"
+                  >Каталог продукції</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link navigation-component__link"
+                  href="./about-us.html"
+                  rel="noopener noreferrer"
+                  >Про нас</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link navigation-component__link"
+                  href="./contacts.html"
+                  rel="noopener noreferrer"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="footer-second__contacts">
+            <a
+              class="contact-component link"
+              href="mailto:buiro@railconhots.pl"
+            >
+              <span class="contact-component__icon">
+                <img src="./images/mail.svg" alt="Railcon Hots S.P.K" />
+              </span>
+              <span
+                class="contact-component__text contact-component__text--dark"
+                >buiro@railconhots.pl</span
+              >
+            </a>
+            <a class="contact-component link" href="tel:48690402690">
+              <span class="contact-component__icon">
+                <img src="./images/phone.svg" alt="Railcon Hots S.P.K" />
+              </span>
+              <span
+                class="contact-component__text contact-component__text--dark"
+                >+48 690-402-690</span
+              >
+            </a>
+            <a
+              class="contact-component link"
+              href="https://maps.app.goo.gl/4mtoi27rfL6AKbXz6"
+              target="_blank"
+            >
+              <span class="contact-component__icon">
+                <img src="./images/location.svg" alt="Railcon Hots S.P.K" />
+              </span>
+              <span
+                class="contact-component__text contact-component__text--dark"
+                >Jana Kasprowicza 145, 01-949 Warszawa, Польща</span
+              >
+            </a>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <span>© 2023-2023, RAILCON HOTS SP.K.. All Rights Reservedm</span>
+          <span class="footer-third__center">
+            <span>Privacy Policy</span><span>Public offer contract</span></span>
+          <span>
+            <span>Powered by</span> <img style="display: inline;" src="./images/kantora.svg" alt="Railcon Hots S.P.K">
+          </span>
+        </div>
+      </div>
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
