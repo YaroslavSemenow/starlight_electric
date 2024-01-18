@@ -1,3 +1,5 @@
+@import url(../utils/_vars.scss);
+
 .footer {
   padding-top: 100px;
 }
@@ -34,7 +36,7 @@
   line-height: 130%;
   white-space: nowrap;
 
-  border-top: 1px solid $additionalTextColor;
+  border-top: 1px solid #DBDBDB;;
 }
 
 .footer-third__center {

@@ -1,5 +1,11 @@
 @import url(../utils/_vars.scss);
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
   color: $darkTextColor;
