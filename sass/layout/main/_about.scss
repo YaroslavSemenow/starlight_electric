@@ -1,0 +1,61 @@
+@import url(../../utils/_vars.scss);
+
+.about__wrapper {
+  position: relative;
+
+  background-image: url(../../../images/main-page/about/map.svg);
+  background-size: cover;
+  background-position: 120% bottom 150px;
+  background-repeat: no-repeat;
+}
+
+.about {
+}
+
+.about__title {
+  margin-bottom: 60px;
+}
+
+.about__desc {
+  max-width: 622px;
+  margin-bottom: 100px;
+}
+
+.about__img {
+  position: absolute;
+  top: 165px;
+  right: 0;
+
+  width: 438px;
+  height: 739px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.about__item {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.about__item:nth-child(1n) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.about__item:nth-child(2n) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.about__item:nth-child(3n) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.about__item:nth-child(4n) {
+  grid-area: 2 / 3 / 3 / 4;
+}

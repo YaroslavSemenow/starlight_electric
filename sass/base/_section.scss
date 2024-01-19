@@ -1,28 +1,25 @@
+@import url(../utils/_vars.scss);
+
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
-.section--hidden-for-mob-tab {
-  display: none;
+.section__title {
+  margin-bottom: 100px;
 
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
+  color: $darkTextColor;
+
+  font-family: $secondaryFontFamily;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.section--hidden-for-mob {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
+.section__title--light {
+  color: $lighTextColor;
 }
 
-.section--no-padding-top {
-  padding-top: 0;
+.section__title--accent {
+  color: $accentTextColor;
 }
