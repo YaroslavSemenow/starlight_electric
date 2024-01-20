@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
   color: $darkTextColor;
@@ -14,8 +18,6 @@ body {
   font-weight: 400;
 
   background-color: $lightBackgroundColor;
-
-  box-sizing: border-box;
 }
 
 h1,

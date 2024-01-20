@@ -1,0 +1,74 @@
+.card-1-component__container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.card-1-component:nth-child(1n) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.card-1-component:nth-child(2n) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.card-1-component:nth-child(3n) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.card-1-component:nth-child(4n) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.card-1-component:nth-child(5n) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.card-1-component:nth-child(6n) {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.card-1-component:nth-child(7n) {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.card-1-component:nth-child(8n) {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.card-1-component:nth-child(9n) {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.card-1-component:nth-child(10n) {
+  grid-area: 5 / 2 / 6 / 3;
+}
+.card-1-component:nth-child(11n) {
+  grid-area: 6 / 2 / 7 / 3;
+}
+.card-1-component:nth-child(12n) {
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+.card-1-component {
+  padding: 48px;
+
+  background-color: $lightBackgroundColor;
+  border: 2px solid #f6f6f6;
+}
+
+.card-1-component__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 40px;
+
+  width: 140px;
+  height: 140px;
+
+  background-color: $accentBackgroundColor;
+  border-radius: 50%;
+}
+
+.card-1-component__title {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+.card-1-component__desc {
+}

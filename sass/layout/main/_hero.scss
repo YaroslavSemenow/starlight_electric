@@ -95,31 +95,4 @@
   position: absolute;
   top: 0;
   right: 15.5%;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-
-  height: 185px;
-  width: 185px;
-
-  border-radius: 5px;
-  background-color: $accentBackgroundColor;
-  cursor: pointer;
-}
-
-.hero-call-action img {
-  align-self: flex-end;
-
-  margin-right: 36px;
-}
-
-.hero-call-action__text {
-  width: 113px;
-
-  color: $lighTextColor;
-  text-align: center;
-  font-weight: 600;
 }

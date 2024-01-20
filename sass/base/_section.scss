@@ -5,21 +5,49 @@
   padding-bottom: 150px;
 }
 
-.section__title {
+.section--dark {
+  background-color: $darkBackgroundColor;
+}
+
+.section-title-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
   margin-bottom: 100px;
+}
+
+.section-title-desc--space-between {
+  justify-content: space-between;
+  flex-direction: row;
+
+  & .section-title-desc__desc {
+    align-self: flex-end;
+  }
+}
+
+.section-title-desc__title {
+  max-width: 762px;
 
   color: $darkTextColor;
-
   font-family: $secondaryFontFamily;
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.section__title--light {
+.section-title-desc__title--light {
   color: $lighTextColor;
 }
 
-.section__title--accent {
+.section-title-desc__title--accent {
   color: $accentTextColor;
+}
+
+.section-title-desc__desc {
+  max-width: 622px;
+}
+
+.section-title-desc__desc--second-color {
+  color: $firstAdditionalColors;
 }

@@ -1,0 +1,31 @@
+@import url(../utils/_vars.scss);
+
+.familiarize-with-product-component {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  height: 185px;
+  width: 185px;
+  padding-top: 39px;
+
+  border-radius: 5px;
+  background-color: $accentBackgroundColor;
+  cursor: pointer;
+}
+
+.familiarize-with-product-component img {
+  align-self: flex-end;
+
+  margin-right: 36px;
+}
+
+.familiarize-with-product-component__text {
+  width: 113px;
+
+  color: $lighTextColor;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+}
