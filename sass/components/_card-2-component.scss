@@ -6,6 +6,7 @@
   grid-row-gap: 20px;
 }
 
+// для 25 елементів в списку(26 кнопка посилання)
 .card-2-component:nth-child(1n) {
   grid-area: 1 / 1 /2 / 2;
 }

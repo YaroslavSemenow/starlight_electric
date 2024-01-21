@@ -4,6 +4,7 @@
   grid-row-gap: 20px;
 }
 
+// для 12х елементів в списку
 .card-1-component:nth-child(1n) {
   grid-area: 1 / 1 / 2 / 2;
 }

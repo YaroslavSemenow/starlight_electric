@@ -1,0 +1,19 @@
+@import url(../../utils/_vars.scss);
+
+.consultation__section {
+  margin-bottom: 0;
+}
+
+.consultation {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.consultation__title {
+max-width: 878px;
+}
+
+.consultation__desc {
+  max-width: 493px;
+}

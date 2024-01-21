@@ -24,20 +24,3 @@
   width: 438px;
   height: 739px;
 }
-
-.scroll::-webkit-scrollbar {
-  color: black;
-  scrollbar-width: thin;
-}
-
-/* Для браузерів, які не підтримують стандарт, можна використовувати власні зображення скрола */
-.scroll::-webkit-scrollbar {
-  max-height: 5px;
-  width: 6px; /* Задайте ширину скрола */
-}
-
-.scroll::-webkit-scrollbar-thumb {
-  max-height: 1px;
-  background-color: #b3b3b3; /* Задайте колір для віджету скрола */
-  border-radius: 10px; /* Задайте закруглені кути для віджету скрола */
-}

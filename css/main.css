@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
@@ -8,6 +7,8 @@
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 .visually-hidden {
@@ -116,6 +117,10 @@ img {
 
 .section-title-desc__desc--second-color {
   color: #DBDBDB;
+}
+
+.section-title-desc__desc--third-color {
+  color: #8C8C8C;
 }
 
 .container {
@@ -1036,7 +1041,7 @@ img {
   position: relative;
   flex-grow: 1;
   height: 640px;
-  background-image: url(../../images/main-page/hero/hero-auto.png);
+  background-image: url(/images/main-page/hero/hero-auto.png);
   background-size: cover;
   background-position: left top 20px;
   background-repeat: no-repeat;
@@ -1068,19 +1073,55 @@ img {
   height: 739px;
 }
 
-.scroll::-webkit-scrollbar {
-  color: black;
+.companies__desc {
+  max-width: 367px;
+}
+
+.companies__list-wrap {
+  padding-bottom: 40px;
+  overflow-x: auto;
   scrollbar-width: thin;
+  scrollbar-color: #ABABAB #EFEFEF;
 }
 
-/* Для браузерів, які не підтримують стандарт, можна використовувати власні зображення скрола */
-.scroll::-webkit-scrollbar {
-  max-height: 5px;
-  width: 6px; /* Задайте ширину скрола */
+.companies__list-wrap::-webkit-scrollbar {
+  max-height: 3px;
 }
 
-.scroll::-webkit-scrollbar-thumb {
-  max-height: 1px;
-  background-color: #b3b3b3; /* Задайте колір для віджету скрола */
-  border-radius: 10px; /* Задайте закруглені кути для віджету скрола */
+.companies__list-wrap::-webkit-scrollbar-thumb {
+  background-color: #ABABAB;
+}
+
+.companies__list-wrap::-webkit-scrollbar-track {
+  background-color: #EFEFEF;
+}
+
+.companies__list {
+  display: flex;
+  gap: 20px;
+}
+
+.companies__item {
+  width: 108px;
+  height: 108px;
+  min-width: 108px;
+  min-height: 108px;
+}
+
+.consultation__section {
+  margin-bottom: 0;
+}
+
+.consultation {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.consultation__title {
+  max-width: 878px;
+}
+
+.consultation__desc {
+  max-width: 493px;
 }/*# sourceMappingURL=main.css.map */
