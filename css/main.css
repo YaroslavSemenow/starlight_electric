@@ -968,7 +968,7 @@ img {
 
 .hero {
   background-color: #15161a;
-  background-image: url(../../images/main-page/hero/line.svg);
+  background-image: url(../images/main-page/hero/line.svg);
   background-size: contain;
   background-position: center bottom 198px;
   background-repeat: no-repeat;
