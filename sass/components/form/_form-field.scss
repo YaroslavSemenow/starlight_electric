@@ -1,0 +1,45 @@
+@import url(../utils/_vars.scss);
+
+.form-field__wrapper {
+  position: relative;
+}
+
+.form-field,
+.form-field__custom-placeholder {
+  padding: 20px;
+}
+
+.form-field {
+  width: 100%;
+
+  color: inherit;
+  font-family: $thirdFontFamily;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+
+  border-radius: $borderRadius;
+  border: 1px solid $firstAdditionalColors;
+}
+
+.form-field__custom-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+
+  padding: 20px;
+
+  font-weight: 500;
+
+  pointer-events: none;
+}
+
+.form-field__custom-placeholder--hidden {
+  display: none;
+}
+
+.form-field__custom-placeholder-icon {
+  color: $accentTextColor;
+}

@@ -1,0 +1,46 @@
+@import url(./utils/_vars.scss);
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-with-dots-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 40px;
+
+  .swiper-pagination-bullet {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+
+    background: $secondAdditionalColors;
+    opacity: 1;
+    border-radius: 50%;
+  }
+
+  .swiper-pagination-bullet__inner {
+    display: none;
+
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+
+    border-radius: 50%;
+
+    background: #f1b415;
+  }
+
+  .swiper-pagination-bullet-active .swiper-pagination-bullet__inner  {
+    display: inline-block;
+  }
+}

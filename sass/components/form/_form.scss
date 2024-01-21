@@ -1,0 +1,17 @@
+@import url(../utils/_vars.scss);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form__help-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.2px;
+}
+
+.form__field-help-text {
+  color: $accentTextColor;
+}
