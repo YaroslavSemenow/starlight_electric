@@ -59,3 +59,18 @@
    
   });
 })();
+
+// =================== swiper з сертифікатами ==========================
+
+(function instSwiperWithDots() {
+  var swiper = new Swiper(".swiper-certificates-container", {
+    slidesPerView: 4,
+    spaceBetween: 26,
+    navigation: {
+      nextEl: ".swiper-certificates__button-next",
+      prevEl: ".swiper-certificates__button-prev",
+    },
+  });
+})();
+
+

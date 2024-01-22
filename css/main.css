@@ -15,6 +15,10 @@
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,6 +64,32 @@
 }
 .swiper-with-dots-pagination .swiper-pagination-bullet-active .swiper-pagination-bullet__inner {
   display: inline-block;
+}
+
+.swiper-certificates-container {
+  padding: 0 25px !important;
+}
+.swiper-certificates-container .swiper-certificates__button-prev,
+.swiper-certificates-container .swiper-certificates__button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid #15161a;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.swiper-certificates-container .swiper-certificates__button-prev {
+  left: 0;
+}
+.swiper-certificates-container .swiper-certificates__button-next {
+  right: 0;
 }
 
 html,
@@ -1102,6 +1132,12 @@ img {
   max-width: 493px;
 }
 
+.consultation__btn {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .export__title-desc {
   display: flex;
   align-items: center;
@@ -1129,4 +1165,172 @@ img {
   border-radius: 5px;
   border: 1px solid #F6F6F6;
   background-color: #ffffff;
+}
+
+.certificates__section {
+  background-color: #15161a;
+  background-image: url(../images/dark-background-line.svg);
+  background-size: contain;
+  background-position: center bottom 47px;
+  background-repeat: no-repeat;
+}
+
+.certificates__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 365px;
+  height: 490px;
+  border-radius: 5px;
+  border: 5px solid #8C8C8C;
+}
+
+.certificates__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.cooperation {
+  display: flex;
+  gap: 148px;
+}
+
+.cooperation__img-wrap {
+  position: relative;
+  min-height: 1141px;
+}
+
+.cooperation__img-wrap img {
+  position: absolute;
+  right: 0;
+  min-width: 822px;
+  height: 1141px;
+}
+
+.cooperation__second-block {
+  width: 50%;
+  margin-top: 130px;
+}
+
+.cooperation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+
+.cooperation-item {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  border-top: 1px solid #DBDBDB;
+}
+
+.cooperation-item__number {
+  padding: 42px 0;
+  color: #64B500;
+  font-family: "Unbounded", sans-serif;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.cooperation-item__title {
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.quality-assurance__title {
+  max-width: 1007px;
+}
+
+.quality-assurance__desc-wrap {
+  padding: 60px 30px 60px 60px;
+  margin-bottom: 54px;
+  border-radius: 5px;
+  background-color: #F6F6F6;
+}
+
+.quality-assurance__desc {
+  max-height: 308px;
+  padding-right: 25px;
+  color: #8C8C8C;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #64B500 #ffffff;
+}
+
+.quality-assurance__desc::-webkit-scrollbar {
+  max-width: 5px;
+}
+
+.quality-assurance__desc::-webkit-scrollbar-thumb {
+  background-color: #64B500;
+  border-radius: 30px;
+}
+
+.quality-assurance__desc::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.quality-assurance__link {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.faq__section {
+  position: relative;
+  padding-top: 0;
+}
+
+.faq__blocks {
+  display: flex;
+  gap: 148px;
+}
+
+.faq__first-block {
+  width: 50%;
+}
+
+.faq__img {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+}
+
+.faq-list__item {
+  display: flex;
+  gap: 57px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 1px solid #000;
+}
+
+.faq-list__item:first-child {
+  border-top: 1px solid #000;
+}
+
+.faq-list__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.faq-list__desc {
+  display: none;
+  margin-top: 20px;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.faq-list__button {
+  min-width: 42px;
+  min-height: 42px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

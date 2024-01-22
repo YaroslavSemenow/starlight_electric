@@ -24,3 +24,9 @@ max-width: 878px;
 .consultation__desc {
   max-width: 493px;
 }
+
+.consultation__btn {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="286" viewBox="0 0 1920 286" fill="none">
+<svg width="1920" height="286" viewBox="0 0 1920 286" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-13 282L583.435 41.288C638.118 19.2187 699.047 18.2357 754.414 38.5297L1318.12 245.148C1382.06 268.585 1452.98 263.508 1512.93 231.204L1929 7" stroke="#222630" stroke-width="15"/>
+<circle cx="1812" cy="70" r="17.5" fill="#15161A" stroke="#222630" stroke-width="15"/>
+<circle cx="131" cy="225" r="17.5" fill="#15161A" stroke="#222630" stroke-width="15"/>
 </svg>

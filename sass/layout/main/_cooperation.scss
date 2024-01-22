@@ -1,0 +1,61 @@
+@import url(../../utils/_vars.scss);
+
+.cooperation {
+  display: flex;
+  gap: 148px;
+}
+
+.cooperation__first-block {
+}
+
+.cooperation__img-wrap {
+  position: relative;
+
+  min-height: 1141px;
+}
+.cooperation__img-wrap img {
+  position: absolute;
+  right: 0;
+
+  min-width: 822px;
+  height: 1141px;
+}
+
+.cooperation__second-block {
+  width: 50%;
+  margin-top: 130px;
+}
+
+.cooperation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+
+.cooperation-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 47%;
+
+  border-top: 1px solid $firstAdditionalColors;
+}
+
+.cooperation-item__number {
+  padding: 42px 0;
+
+  color: $accentTextColor;
+  font-family: $secondaryFontFamily;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.cooperation-item__title {
+  margin-bottom: 14px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+}
