@@ -49,14 +49,11 @@
       el: ".swiper-with-dots-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return (
-          `<span class="${className}">
+        return `<span class="${className}">
             <span class="${className}__inner"></span>
-          </span>`
-        );
+          </span>`;
       },
     },
-   
   });
 })();
 
@@ -73,4 +70,29 @@
   });
 })();
 
+// =================== accordion в секції FAQ ==========================
 
+(function accordionFAQ() {
+  const accordionArr = document.querySelectorAll(".faq-list__item");
+
+  if (!accordionArr?.length) return;
+
+  accordionArr.forEach((accordion) => {
+    const dropdown = accordion.querySelector(".faq-list__desc");
+    const btn = accordion.querySelector(".faq-list__button");
+    const minusImg = "./images/minus.svg";
+    const plusImg = "./images/plus.svg";
+
+    btn.addEventListener("click", () => {
+      if (!!dropdown.style.maxHeight) {
+        dropdown.style.maxHeight = null;
+        dropdown.style.marginTop = null;
+        btn.src = plusImg;
+      } else {
+        dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+        dropdown.style.marginTop = "20px";
+        btn.src = minusImg;
+      }
+    });
+  });
+})();

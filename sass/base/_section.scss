@@ -9,6 +9,14 @@
   background-color: $darkBackgroundColor;
 }
 
+.section--background-line {
+  background-color: $darkBackgroundColor;
+  background-image: url(../images/dark-background-line.svg);
+  background-size: contain;
+  background-position: center bottom 47px;
+  background-repeat: no-repeat;
+}
+
 .section-title-desc {
   display: flex;
   flex-direction: column;
