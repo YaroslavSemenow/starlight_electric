@@ -6,7 +6,11 @@
 
 .form-field,
 .form-field__custom-placeholder {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  height: 59px;
+  padding: 0 30px;
 }
 
 .form-field {
@@ -29,7 +33,7 @@
 
   display: flex;
 
-  padding: 20px;
+  padding: 0 30px;
 
   font-weight: 500;
 

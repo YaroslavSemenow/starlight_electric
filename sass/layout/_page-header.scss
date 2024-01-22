@@ -9,7 +9,33 @@
   padding: 12px 0;
   width: 100%;
 
-  transition: background-color $transitionDuration $transitionTimingFunction;
+  transition: all $transitionDuration $transitionTimingFunction;
+
+  // dark background
+  .page-header__logo-dark,
+  .page-header__localisation--icon-dark {
+    display: none;
+  }
+}
+
+.page-header--light-background {
+border-bottom: 1px solid $firstAdditionalColors;
+
+  .page-header__logo-light,
+  .page-header__localisation--icon-light {
+    display: none;
+  }
+
+  .page-header__logo-dark,
+  .page-header__localisation--icon-dark {
+    display: block;
+  }
+
+  .navigation-component__link,
+  .contact-component__text,
+  .page-header__localisation-text {
+    color: $darkTextColor;
+  }
 }
 
 .page-header__container {
@@ -25,6 +51,11 @@
 .page-header__right {
   display: flex;
   align-items: center;
+}
+
+.page-header__logo {
+  width: 142px;
+  height: 46px;
 }
 
 .page-header__navigation {
@@ -60,45 +91,45 @@
 }
 
 .page-header__container {
-    height: 100%;
-  }
+  height: 100%;
+}
 
-  .page-header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.page-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .page-header__right {
-    display: flex;
-    align-items: center;
-  }
+.page-header__right {
+  display: flex;
+  align-items: center;
+}
 
-  .page-header__navigation {
-    margin-right: 56px;
-  }
+.page-header__navigation {
+  margin-right: 56px;
+}
 
-  .page-header__contacts {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.page-header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-    margin-right: 20px;
-  }
+  margin-right: 20px;
+}
 
-  .page-header__button {
-    margin-right: 20px;
-  }
+.page-header__button {
+  margin-right: 20px;
+}
 
-  .page-header__localisation {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.page-header__localisation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 
-  .page-header__localisation-text {
-    font-weight: 500;
-    color: $lighTextColor;
-  }
+.page-header__localisation-text {
+  font-weight: 500;
+  color: $lighTextColor;
+}

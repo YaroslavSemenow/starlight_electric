@@ -5,9 +5,15 @@
 
   if (!headerEl) return;
 
+  const headerToggle = headerEl.dataset.headerBackground;
+  const darkBackground = "rgba(0, 0, 0, 0.55)";
+  const lightBackground = "rgb(255 255 255 / 98%)";
+  const currentBackground =
+    headerToggle === "light" ? lightBackground : darkBackground;
+
   document.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
-      headerEl.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+      headerEl.style.backgroundColor = currentBackground;
       return;
     }
 

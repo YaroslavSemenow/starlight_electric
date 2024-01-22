@@ -6,6 +6,10 @@
   gap: 20px;
 }
 
+.form--row {
+  flex-direction: row;
+}
+
 .form__help-text {
   font-size: 14px;
   font-weight: 500;

@@ -1,19 +1,37 @@
 @import url(../utils/_vars.scss);
 
+.main--padding-top {
+  margin-top: 160px;
+}
+
 .section {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.section--not-padding-top {
+  padding-top: 0;
 }
 
 .section--dark {
   background-color: $darkBackgroundColor;
 }
 
+.section--grey {
+  background-color: $secondAdditionalColors;
+}
+
 .section--background-line {
-  background-color: $darkBackgroundColor;
   background-image: url(../images/dark-background-line.svg);
   background-size: contain;
   background-position: center bottom 47px;
+  background-repeat: no-repeat;
+}
+
+.section--background-world {
+  background-image: url(../images/world.svg);
+  background-size: auto;
+  background-position: center top 110px;
   background-repeat: no-repeat;
 }
 

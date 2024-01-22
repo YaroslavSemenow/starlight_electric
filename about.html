@@ -16,7 +16,10 @@
   </head>
   <body>
     <!-- start header -->
-    <header class="page-header">
+    <header
+      class="page-header page-header--light-background"
+      data-header-background="light"
+    >
       <div class="container">
         <div class="page-header__inner">
           <div class="page-header__left">
@@ -142,57 +145,29 @@
     </header>
     <!-- end header -->
 
-    <main>
-      <!-- start hero -->
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero-title__wrapper">
-            <div class="hero-title">
-              <h1 class="hero-title__first">
-                <span class="hero-title__text"
-                  >Імпорт та експорт продукції</span
-                >
-                <span class="hero-title__first-icon">
-                  <img
-                    src="./images/earth-accent-color.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </span>
-              </h1>
-              <div class="hero-title__second">
-                <a class="hero-title__second-icon" rel="noopener noreferrer">
-                  <img
-                    src="./images/arrows/arrow-right.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </a>
-                <span class="hero-title__text"
-                  >З України в Європейський союз</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-second-block">
-            <a
-              class="familiarize-with-product-component link hero-call-action"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./images/main-page/hero/arrow-top-right.svg"
-                alt="Railcon Hots S.P.K"
-              />
-              <span class="familiarize-with-product-component__text">
-                Ознайомитися з продукцією компанії
-              </span>
-            </a>
-          </div>
+    <main class="main--padding-top">
+      <!-- breadcrumbs -->
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__item link" href="./index.html">
+            <img src="./images/home.svg" alt="Railcon Hots S.P.K" />
+            <span>Головна</span>
+          </a>
+          <img
+            src="./images/arrows/arrow-right-grey.svg"
+            alt="Railcon Hots S.P.K"
+          />
+          <a
+            class="breadcrumbs__item breadcrumbs__item--current link"
+            href="./catalog.html"
+          >
+            Про нас
+          </a>
         </div>
-      </section>
-      <!-- end hero -->
+      </div>
 
       <!-- start section about -->
-      <section class="section about__wrapper section--background-world">
+      <section class="section section--background-world">
         <div class="container">
           <div class="about">
             <div class="section-title-desc">
@@ -210,11 +185,6 @@
                 нашим надійним партнерам та високому стандарту контролю якості.
               </p>
             </div>
-            <img
-              class="about__img"
-              src="./images/main-page/about/box-desk.png"
-              alt="Railcon Hots S.P.K"
-            />
             <ul class="card-1-component__container">
               <li class="card-1-component">
                 <div class="card-1-component__icon">
@@ -275,550 +245,60 @@
       </section>
       <!-- end section about -->
 
-      <!-- start section categories -->
-      <section class="section section--dark">
+      <!-- start section calculator -->
+      <section class="section section--grey">
         <div class="container">
-          <div class="categories">
-            <div class="section-title-desc section-title-desc--space-between">
-              <h2 class="section-title-desc__title">
-                <div class="section-title-desc__title--accent">Продукція,</div>
-                <div class="section-title-desc__title--light">
-                  яку ви можете замовити в нашій компанії
-                </div>
+          <div class="calculator">
+            <div class="section-title-desc">
+              <h2 class="section-title-desc__title about__title">
+                <div class="section-title-desc__title--accent">Калькулятор</div>
+                <div>розрахунку вартості</div>
+                <div>доставки</div>
               </h2>
-              <div
-                class="section-title-desc__desc section-title-desc__desc--second-color"
-              >
-                Lorem ipsum dolor sit amet consectetur. Cras pharetra at
-                tristique dignissim sit morbi pellentesque turpis. Sapien id
-                morbi nunc risus in. Lorem egestas tempus quam fermentum
-                ultricies nulla. In hac eget bibendum gravida.
-              </div>
             </div>
-            <ul class="card-2-component__container">
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/1.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Пелети з деревини якості Premium Gold A1 En+
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/2.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Пелети з деревини якості згідно A1 En+ капучино
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/3.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Брикети дерев’яні RUF
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/4.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Брикети дерев’яні NESTRO
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/5.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Брикети дерев’яні PINI-KAY
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/6.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Пелети з 100% лушпиння соняшника 8 мм
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/7.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Паливні пелети із соломи
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/8.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Паливні пелети із висівок пшениці
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/9.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">Цукор 1 категорія</div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/10.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">Цукор 2 категорія</div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/11.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Олія рафінована (в пляшках, 1л, 2л, 5л)
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component">
-                <div class="card-2-component__inner">
-                  <div class="card-2-component__img">
-                    <img
-                      src="./images/main-page/categories/12.png"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </div>
-                  <div class="card-2-component-title__wrap">
-                    <div class="card-2-component-title">
-                      Олія нерафінована (в цистернах)
-                    </div>
-                    <a class="card-2-component-title__link link">
-                      <img
-                        src="./images/arrows/arrow-right-2.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <li class="card-2-component card-2-component--not-border">
-                <a
-                  class="familiarize-with-product-component link"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./images/main-page/hero/arrow-top-right.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                  <span class="familiarize-with-product-component__text">
-                    Ознайомитися з продукцією компанії
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- end section categories -->
-
-      <!-- start section companies -->
-      <section class="section">
-        <div class="container">
-          <div class="companies">
-            <div class="section-title-desc section-title-desc--space-between">
-              <div class="section-title-desc__title">
-                <div>Компанії, які</div>
-                <div>
-                  <span>нам</span>
-                  <span class="section-title-desc__title--accent">
-                    довіряють
-                  </span>
-                </div>
-              </div>
-              <p class="section-title-desc__desc companies__desc">
-                Долати грані та досягати успіху разом – ось наша спільна подорож
-                з провідними гравцями у світі бізнесу.
-              </p>
-            </div>
-
-            <div class="companies__list-wrap">
-              <ul class="companies__list">
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/cola.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/shell.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/nestle.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/vw.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/tesco.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/lidl.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/cola.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/shell.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/nestle.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/vw.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/tesco.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/lidl.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/cola.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/shell.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/nestle.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/vw.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/tesco.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/lidl.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/cola.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/shell.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/nestle.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/vw.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/tesco.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-                <li class="companies__item">
-                  <img
-                    src="./images/main-page/companies/lidl.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end section companies -->
-
-      <!-- start consultation-and-export-wrapper -->
-      <div class="container">
-        <div class="consultation-and-export-wrapper">
-          <!-- start section consultation -->
-          <section class="section consultation__section">
-            <div class="consultation">
-              <div class="section-title-desc">
-                <h2 class="section-title-desc__title consultation__title">
-                  <div class="section-title-desc__title--accent">
-                    Потрібно замовити агропродукцію чи палети?
-                  </div>
-                  <div>
-                    Замовте консультацію від провідного Екcпортера в Європі.
-                  </div>
-                </h2>
-                <div
-                  class="section-title-desc__desc section-title-desc__desc--third-color consultation__desc"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Cras pharetra at
-                  tristique dignissim sit morbi pellentesque turpis. Sapien id
-                  morbi nunc risus in. Lorem egestas tempus quam fermentum
-                  ultricies nulla. In hac eget bibendum gravida.
-                </div>
-              </div>
-
+            <div class="calculator__form">
               <form class="form">
-                <div class="form-field__wrapper">
-                  <input class="form-field" type="text" id="name" required />
-                  <span class="form-field__custom-placeholder">
-                    Ваше Ім’я
-                    <span class="form-field__custom-placeholder-icon">*</span>
-                  </span>
-                </div>
+                <div class="form form--row">
+                  <div class="form-field__wrapper">
+                    <input class="form-field" type="text" id="product" />
+                    <span class="form-field__custom-placeholder">
+                      Оберіть продукт
+                    </span>
+                  </div>
 
-                <div class="form-field__wrapper">
-                  <input class="form-field" type="email" id="email" required />
-                  <span class="form-field__custom-placeholder">
-                    Ваш E-mail
-                    <span class="form-field__custom-placeholder-icon">*</span>
-                  </span>
-                </div>
+                  <div class="form-field__wrapper">
+                    <input class="form-field" type="text" id="product" />
+                    <span class="form-field__custom-placeholder">
+                      Місто відправлення
+                    </span>
+                  </div>
 
-                <div class="form-field__wrapper">
-                  <input
-                    class="form-field"
-                    type="text"
-                    id="phone"
-                    pattern="\d{11}"
-                    required
-                  />
-                  <span class="form-field__custom-placeholder">
-                    (0__) ___-__-__
-                    <span class="form-field__custom-placeholder-icon">*</span>
-                  </span>
-                </div>
+                  <div class="form-field__wrapper">
+                    <input class="form-field" type="text" id="product" />
+                    <span class="form-field__custom-placeholder">
+                      Місто доставки
+                    </span>
+                  </div>
 
-                <div class="form-field__wrapper">
-                  <textarea class="form-field" id="message"></textarea>
-                  <span class="form-field__custom-placeholder">
-                    Розкажіть детальніше про продукцію яку хотіли б отримати
-                  </span>
-                </div>
+                  <div class="form-field__wrapper">
+                    <input class="form-field" type="text" id="product" />
+                    <span class="form-field__custom-placeholder">
+                      Варість за 1 км:
+                    </span>
+                  </div>
 
-                <p class="form__field-help-text">
-                  * Поле обов’язкове до заповнення
-                </p>
+                  <button class="button" type="submit">
+                    <span>Вартість доставки: $1000</span>
+                    <img
+                      src="./images/arrows/arrow-right-2.svg"
+                      alt="Railcon Hots S.P.K"
+                    />
+                  </button>
+                </div>
 
                 <div>
-                  <button class="button consultation__btn" type="submit">
-                    <span>Поставити запитання</span>
+                  <button class="button" type="submit">
+                    <span>Замовити доставку</span>
                     <img
                       src="./images/arrows/arrow-right-2.svg"
                       alt="Railcon Hots S.P.K"
@@ -832,152 +312,84 @@
                 </p>
               </form>
             </div>
-          </section>
-          <!-- end section consultation -->
-
-          <!-- start section export -->
-          <section class="section">
-            <div class="export">
-              <div class="section-title-desc export__title-desc">
-                <h2 class="section-title-desc__title export__title">
-                  <div class="section-title-desc__title--accent">
-                    Ми експортуємо високоякісну
-                  </div>
-                  <div>
-                    <span class="section-title-desc__title--accent"
-                      >продукцію з України,
-                    </span>
-                    натомість
-                  </div>
-                  <div>Екпортуємо її по всій Європі</div>
-                </h2>
-                <div
-                  class="section-title-desc__desc section-title-desc__desc--third-color export__desc"
-                >
-                  Нашими послугами користуються країни зі всього Єросоюзу. Ось
-                  країни, в які наша компанія найчастіше постачає продукцію:
-                </div>
-
-                <div class="swiper-with-dots-container swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/AT.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Австрія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/CZ.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Чехія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/DE.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Німеччина</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/Spain.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Іспанія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/FR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Франція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/GR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Греція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/AT.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Австрія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/CZ.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Чехія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/DE.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Німеччина</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/Spain.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Іспанія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/FR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Франція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/GR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Греція</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-with-dots-pagination"></div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- end section export -->
+          </div>
         </div>
-      </div>
-      <!-- end consultation-and-export-wrapper -->
+      </section>
+      <!-- end section calculator -->
+
+      <!-- start delivery about (всі стилі з about) -->
+      <section class="section">
+        <div class="container">
+          <div class="about">
+            <div class="section-title-desc">
+              <h2 class="section-title-desc__title about__title">
+                <div>
+                  <span>Інформація </span>
+                  <span class="section-title-desc__title--accent"
+                    >Про умови
+                  </span>
+                </div>
+                <div class="section-title-desc__title--accent">доставки</div>
+              </h2>
+            </div>
+            <ul class="card-1-component__container">
+              <li class="card-1-component">
+                <div class="card-1-component__icon">
+                  <img
+                    src="./images/about-page/delivery.svg"
+                    alt="Railcon Hots S.P.K"
+                  />
+                </div>
+                <div>Експрес-доставка</div>
+                <div>
+                  Швидка та ефективна доставка товарів за межі України.
+                  Гнучкість та ефективність у міжнародних торгівлях.
+                </div>
+              </li>
+              <li class="card-1-component">
+                <div class="card-1-component__icon">
+                  <img
+                    src="./images/about-page/fast.svg"
+                    alt="Railcon Hots S.P.K"
+                  />
+                </div>
+                <div>Автомобільні перевезення</div>
+                <div>
+                  Оптимізовані маршрути та безпека перевезення вантажу через
+                  море для масштабних партій.
+                </div>
+              </li>
+              <li class="card-1-component">
+                <div class="card-1-component__icon">
+                  <img
+                    src="./images/about-page/freight-train.svg"
+                    alt="Railcon Hots S.P.K"
+                  />
+                </div>
+                <div>Залізнична доставка в Європу</div>
+                <div>
+                  Надійна та економічна доставка в Європу зі строками гарантії
+                  для вашого спокою.
+                </div>
+              </li>
+              <li class="card-1-component">
+                <div class="card-1-component__icon">
+                  <img
+                    src="./images/about-page/paperclip.svg"
+                    alt="Railcon Hots S.P.K"
+                  />
+                </div>
+                <div>Митне оформлення та підтримка</div>
+                <div>
+                  Безпечне та прозоре таможенне оформлення з комплексною
+                  підтримкою для ефективного експорту та імпорту.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end delivery about -->
 
       <!-- start section certificates -->
       <section class="section section--dark section--background-line">
@@ -1454,7 +866,7 @@
 
             <form class="form">
               <div class="form-field__wrapper">
-                <input class="form-field" type="text" id="name" required />
+                <input class="form-field" type="text" id="name" />
                 <span class="form-field__custom-placeholder">
                   Ваше Ім’я
                   <span class="form-field__custom-placeholder-icon">*</span>
@@ -1462,7 +874,7 @@
               </div>
 
               <div class="form-field__wrapper">
-                <input class="form-field" type="email" id="email" required />
+                <input class="form-field" type="email" id="email" />
                 <span class="form-field__custom-placeholder">
                   Ваш E-mail
                   <span class="form-field__custom-placeholder-icon">*</span>
@@ -1475,7 +887,6 @@
                   type="text"
                   id="phone"
                   pattern="\d{11}"
-                  required
                 />
                 <span class="form-field__custom-placeholder">
                   (0__) ___-__-__

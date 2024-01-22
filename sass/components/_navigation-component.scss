@@ -9,17 +9,12 @@
 }
 
 .navigation-component__link {
-  color: $darkTextColor;
+  color: $lighTextColor;
   font-weight: 600;
 
   transition: color $transitionDuration $transitionTimingFunction;
-}
 
-.navigation-component__link--light {
-  color: $lightBackgroundColor;
-  font-weight: 500;
-  
   &:hover {
-    color: $accentTextColor;
+    color: $accentTextColor !important;
   }
 }
