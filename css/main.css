@@ -20,6 +20,7 @@
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
+@import url(../../utils/_vars.scss);
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -310,6 +311,10 @@ img {
 }
 .navigation-component__link:hover {
   color: #64B500 !important;
+}
+
+.navigation-component__link--dark {
+  color: #15161a;
 }
 
 .familiarize-with-product-component {

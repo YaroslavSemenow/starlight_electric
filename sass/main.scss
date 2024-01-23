@@ -30,15 +30,14 @@
 @import "./layout/mobile-menu";
 @import "./layout/modal";
 
-// layout/main
-@import "./layout/main/hero";
-@import "./layout/main/about";
-@import "./layout/main/companies";
-@import "./layout/main/consultation";
-@import "./layout/main/export";
-@import "./layout/main/certificates";
-@import "./layout/main/cooperation";
-@import "./layout/main/quality-assurance";
-@import "./layout/main/faq";
-
-// layout/categories
+// layout/sections
+@import "./layout/sections/hero";
+@import "./layout/sections/about";
+@import "./layout/sections/companies";
+@import "./layout/sections/consultation";
+@import "./layout/sections/export";
+@import "./layout/sections/certificates";
+@import "./layout/sections/cooperation";
+@import "./layout/sections/quality-assurance";
+@import "./layout/sections/faq";
+@import "./layout/sections/contacts";
