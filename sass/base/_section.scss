@@ -13,6 +13,10 @@
   padding-top: 0;
 }
 
+.section--100-padding-bottom {
+  padding-bottom: 100px;
+}
+
 .section--dark {
   background-color: $darkBackgroundColor;
 }
@@ -31,7 +35,7 @@
 .section--background-world {
   background-image: url(../images/world.svg);
   background-size: auto;
-  background-position: center top 110px;
+  background-position: center top -110px;
   background-repeat: no-repeat;
 }
 
