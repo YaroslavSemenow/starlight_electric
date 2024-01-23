@@ -243,6 +243,24 @@ img {
   cursor: pointer;
 }
 
+.button--nowrap {
+  white-space: nowrap;
+}
+
+.button--bold {
+  font-weight: 700;
+}
+
+.button--second-font {
+  font-family: "Inter", sans-serif;
+}
+
+.button--with-icon {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .contact-component {
   display: flex;
   align-items: center;
@@ -620,12 +638,19 @@ img {
   pointer-events: none;
 }
 
-.form-field__custom-placeholder--hidden {
-  display: none;
+.form-field__custom-placeholder--space-between {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.form-field__custom-placeholder-icon {
+.form-field__custom-placeholder--accent {
   color: #64B500;
+  font-weight: 700;
+}
+
+.form-field__custom-placeholder--hidden {
+  display: none;
 }
 
 .form {

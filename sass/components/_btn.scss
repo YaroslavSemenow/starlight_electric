@@ -12,3 +12,21 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.button--nowrap {
+  white-space: nowrap;
+}
+
+.button--bold {
+  font-weight: 700;
+}
+
+.button--second-font {
+  font-family: $thirdFontFamily;
+}
+
+.button--with-icon {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}

@@ -40,10 +40,18 @@
   pointer-events: none;
 }
 
-.form-field__custom-placeholder--hidden {
-  display: none;
+.form-field__custom-placeholder--space-between {
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
 }
 
-.form-field__custom-placeholder-icon {
+.form-field__custom-placeholder--accent {
   color: $accentTextColor;
+  font-weight: 700;
+}
+
+.form-field__custom-placeholder--hidden {
+  display: none;
 }
