@@ -15,10 +15,21 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.consultation__title-desc {
+  @media (max-width: 900px) {
+    margin-bottom: 0;
+  }
 }
 
 .consultation__title {
-max-width: 878px;
+  max-width: 878px;
 }
 
 .consultation__desc {

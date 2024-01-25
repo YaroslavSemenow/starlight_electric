@@ -34,9 +34,18 @@
 
 .section--background-world {
   background-image: url(../images/world.svg);
-  background-size: auto;
+  background-size: 100% 100%;
   background-position: center top -110px;
   background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    background-size: 130% 100%;
+  }
+
+  @media (max-width: 768px) {
+    background-size: 210% 75%;
+    background-position: center top -400px;
+  }
 }
 
 .section-title-desc {
@@ -45,6 +54,12 @@
   gap: 45px;
 
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    gap: 40px;
+
+    margin-bottom: 40px;
+  }
 }
 
 .section-title-desc--space-between {
@@ -53,6 +68,10 @@
 
   & .section-title-desc__desc {
     align-self: flex-end;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
   }
 }
 
@@ -64,6 +83,10 @@
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 }
 
 .section-title-desc__title--light {

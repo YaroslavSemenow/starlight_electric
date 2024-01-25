@@ -6,6 +6,12 @@
 .navigation-component__list {
   display: flex;
   gap: 40px;
+
+  @media (max-width: 900px) {
+    .page-header & {
+      gap: 20px;
+    }
+  }
 }
 
 .navigation-component__link {

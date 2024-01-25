@@ -35,10 +35,15 @@
   color: $lighTextColor;
 
   transition: all $transitionDuration $transitionTimingFunction;
+
+  @media (max-width: 1200px) {
+    .page-header & {
+      display: none;
+    }
+  }
 }
 
 .contact-component__text--dark {
   font-weight: 600;
   color: $darkTextColor;
 }
-
