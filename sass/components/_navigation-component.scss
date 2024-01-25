@@ -12,6 +12,12 @@
       gap: 20px;
     }
   }
+
+  @media (max-width: 768px) {
+    .footer & {
+      gap: 35px;
+    }
+  }
 }
 
 .navigation-component__link {

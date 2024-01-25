@@ -17,6 +17,11 @@
 
   border-radius: $borderRadius;
   background-color: $secondAdditionalColors;
+
+  @media (max-width: 768px) {
+    padding: 20px 15px 20px 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .quality-assurance__desc {
@@ -30,6 +35,11 @@
   // налашутвання скролу для mozilla
   scrollbar-width: thin;
   scrollbar-color: $accentBackgroundColor $lightBackgroundColor;
+
+  @media (max-width: 768px) {
+    max-height: 228px;
+    padding-right: 20px;
+  }
 }
 
 // налашутвання скролу для всіх інших

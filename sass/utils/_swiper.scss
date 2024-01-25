@@ -48,6 +48,10 @@
 .swiper-certificates-container {
   padding: 0 25px !important;
 
+  @media (max-width: 768px) {
+    padding: 0 0 70px 0 !important;
+  }
+
   .swiper-certificates__button-prev,
   .swiper-certificates__button-next {
     position: absolute;
@@ -67,13 +71,34 @@
     background-color: $lightBackgroundColor;
 
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      top: auto;
+      bottom: 0;
+      transform: none;
+
+      & svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 
   .swiper-certificates__button-prev {
     left: 0;
+
+    @media (max-width: 768px) {
+      left: auto;
+      right: calc(50% - 16px);
+    }
   }
 
   .swiper-certificates__button-next {
     right: 0;
+
+    @media (max-width: 768px) {
+      left: calc(50% + 16px);
+      right: auto;
+    }
   }
 }

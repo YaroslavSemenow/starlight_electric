@@ -16,6 +16,13 @@
   border: transparent;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
 }
 
 .button--nowrap {

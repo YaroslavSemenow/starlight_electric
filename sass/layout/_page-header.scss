@@ -152,3 +152,11 @@
   font-weight: 500;
   color: $lighTextColor;
 }
+
+.mobile-memu-btn {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}

@@ -10,7 +10,7 @@
   align-items: center;
 
   height: 59px;
-  padding: 0 30px;
+  padding: 20px 30px;
 }
 
 .form-field {
@@ -24,6 +24,12 @@
 
   border-radius: $borderRadius;
   border: 1px solid $firstAdditionalColors;
+
+  resize: none;
+}
+
+textarea.form-field {
+  height: 140px;
 }
 
 .form-field__custom-placeholder {
@@ -32,8 +38,6 @@
   left: 0;
 
   display: flex;
-
-  padding: 0 30px;
 
   font-weight: 500;
 

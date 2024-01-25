@@ -1,0 +1,52 @@
+@import url(../../utils/_vars.scss);
+
+// .calculator {
+// }
+
+.calculator-form__inner {
+  @media (max-width: 1550px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
+}
+
+.calculator-form-field__wrapper {
+  @media (max-width: 1550px) {
+    width: calc(100% / 4 - 15px);
+  }
+
+  @media (max-width: calc(1200px + 30px)) {
+    width: 40%;
+  }
+
+  @media (max-width: 900px) {
+    width: 48%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.calculator-button__price,
+.calculator-button__submit {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.calculator-button__price {
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+.calculator-button__submit {
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}

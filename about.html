@@ -79,6 +79,12 @@
                 </span>
                 <span class="contact-component__text">+48 690-402-690</span>
               </a>
+              <!-- до контактів не відноситься, але стилі однакові -->
+              <button class="btn mobile-memu-btn" type="button">
+                <span class="contact-component__icon">
+                  <img src="./images/burger.svg" alt="Railcon Hots S.P.K" />
+                </span>
+              </button>
             </div>
 
             <button class="button page-header__button" type="button">
@@ -167,7 +173,9 @@
       </div>
 
       <!-- start section about -->
-      <section class="section section--background-world section--not-padding-top">
+      <section
+        class="section section--background-world section--not-padding-top"
+      >
         <div class="container">
           <div class="about">
             <div class="section-title-desc section-title-desc--space-between">
@@ -253,77 +261,81 @@
                 <div>доставки</div>
               </h2>
             </div>
-            <div class="calculator__form">
-              <form class="form">
-                <div class="form form--row">
-                  <div class="form-field__wrapper">
-                    <input class="form-field" type="text" id="product" />
-                    <span
-                      class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
-                    >
-                      <span>Оберіть продукт</span>
-                      <img
-                        src="./images/arrows/arrow-down-grey.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </span>
-                  </div>
-
-                  <div class="form-field__wrapper">
-                    <input class="form-field" type="text" id="product" />
-                    <span
-                      class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
-                    >
-                      <span>Місто відправлення</span>
-                      <img
-                        src="./images/arrows/arrow-down-grey.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </span>
-                  </div>
-
-                  <div class="form-field__wrapper">
-                    <input class="form-field" type="text" id="product" />
-                    <span
-                      class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
-                    >
-                      <span>Місто доставки</span>
-                      <img
-                        src="./images/arrows/arrow-down-grey.svg"
-                        alt="Railcon Hots S.P.K"
-                      />
-                    </span>
-                  </div>
-
-                  <div class="form-field__wrapper">
-                    <input class="form-field" type="text" id="product" />
-                    <span class="form-field__custom-placeholder">
-                      Варість за 1 км:
-                      <span class="form-field__custom-placeholder--accent">
-                        &nbsp;&nbsp;15zl
-                      </span>
-                    </span>
-                  </div>
-
-                  <button class="button button--second-font" type="button">
-                    <span class="button--nowrap">
-                      Вартість доставки:
-                      <span class="button--bold">&nbsp;&nbsp;$1000</span>
-                    </span>
-                  </button>
-                </div>
-
-                <div>
-                  <button class="button button--with-icon" type="submit">
-                    <span>Замовити доставку</span>
+            <form class="form calculator-form">
+              <div class="form form--row calculator-form__inner">
+                <div class="form-field__wrapper calculator-form-field__wrapper">
+                  <input class="form-field" type="text" id="product" />
+                  <span
+                    class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
+                  >
+                    <span>Оберіть продукт</span>
                     <img
-                      src="./images/arrows/arrow-right-2.svg"
+                      src="./images/arrows/arrow-down-grey.svg"
                       alt="Railcon Hots S.P.K"
                     />
-                  </button>
+                  </span>
                 </div>
-              </form>
-            </div>
+
+                <div class="form-field__wrapper calculator-form-field__wrapper">
+                  <input class="form-field" type="text" id="product" />
+                  <span
+                    class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
+                  >
+                    <span>Місто відправлення</span>
+                    <img
+                      src="./images/arrows/arrow-down-grey.svg"
+                      alt="Railcon Hots S.P.K"
+                    />
+                  </span>
+                </div>
+
+                <div class="form-field__wrapper calculator-form-field__wrapper">
+                  <input class="form-field" type="text" id="product" />
+                  <span
+                    class="form-field__custom-placeholder form-field__custom-placeholder--space-between"
+                  >
+                    <span>Місто доставки</span>
+                    <img
+                      src="./images/arrows/arrow-down-grey.svg"
+                      alt="Railcon Hots S.P.K"
+                    />
+                  </span>
+                </div>
+
+                <div class="form-field__wrapper calculator-form-field__wrapper">
+                  <input class="form-field" type="text" id="product" />
+                  <span class="form-field__custom-placeholder">
+                    Варість за 1 км:
+                    <span class="form-field__custom-placeholder--accent">
+                      &nbsp;&nbsp;15zl
+                    </span>
+                  </span>
+                </div>
+
+                <button
+                  class="button button--second-font calculator-button__price"
+                  type="button"
+                >
+                  <span class="button--nowrap">
+                    Вартість доставки:
+                    <span class="button--bold">&nbsp;&nbsp;$1000</span>
+                  </span>
+                </button>
+              </div>
+
+              <div>
+                <button
+                  class="button button--with-icon calculator-button__submit"
+                  type="submit"
+                >
+                  <span>Замовити доставку</span>
+                  <img
+                    src="./images/arrows/arrow-right-2.svg"
+                    alt="Railcon Hots S.P.K"
+                  />
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -708,7 +720,7 @@
       <section class="section faq__section">
         <div class="container">
           <div class="faq">
-            <div class="section-title-desc">
+            <div class="section-title-desc faq__title-desc">
               <h2 class="section-title-desc__title">FAQ</h2>
             </div>
             <div class="faq__blocks">
@@ -842,8 +854,13 @@
               </div>
               <div class="faq__second-block">
                 <img
-                  class="faq__img"
+                  class="faq__img faq__img--desk"
                   src="./images/main-page/faq/container.png"
+                  alt="Railcon Hots S.P.K"
+                />
+                <img
+                  class="faq__img faq__img--mob"
+                  src="./images/main-page/faq/container-mob.png"
                   alt="Railcon Hots S.P.K"
                 />
               </div>
@@ -942,7 +959,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-first">
-          <img src="./images/logo-dark.svg" alt="">
+          <img src="./images/logo-dark.svg" alt="" />
         </div>
         <div class="footer-second">
           <nav>

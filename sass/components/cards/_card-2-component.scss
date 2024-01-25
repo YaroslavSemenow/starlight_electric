@@ -4,6 +4,13 @@
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+
+  @media (max-width: 1550px) {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 // для 25 елементів в списку(26 кнопка посилання)
@@ -95,6 +102,15 @@
 
   border-radius: 5px;
   border: 1px solid $firstAdditionalColors;
+
+  @media (max-width: 768px) {
+    width: 349px;
+    height: 349px;
+  }
+}
+
+.catalog-page .card-2-component--last-item {
+  display: none;
 }
 
 .card-2-component--not-border {
@@ -107,6 +123,10 @@
 
   border-radius: 5px;
   background-color: $lightBackgroundColor;
+
+  @media (max-width: 768px) {
+    padding: 32px;
+  }
 }
 
 .card-2-component__img {
@@ -128,6 +148,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 22px;
+
+  @media (max-width: 768px) {
+    gap: 25px;
+  }
 }
 
 .card-2-component-title {

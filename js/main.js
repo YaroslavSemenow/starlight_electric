@@ -66,9 +66,21 @@
 // =================== swiper з сертифікатами ==========================
 
 (function instSwiperWithDots() {
-  var swiper = new Swiper(".swiper-certificates-container", {
-    slidesPerView: 4,
-    spaceBetween: 26,
+  const swiper = new Swiper(".swiper-certificates-container", {
+    slidesPerView: 1.8,
+    spaceBetween: 11,
+    breakpoints: {
+      500: {
+        slidesPerView: 2.2,
+      },
+      650: {
+        slidesPerView: 3,
+        spaceBetween: 26,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
     navigation: {
       nextEl: ".swiper-certificates__button-next",
       prevEl: ".swiper-certificates__button-prev",
