@@ -1,14 +1,33 @@
 @import url(../../utils/_vars.scss);
 
+.consultation-and-export-wrapper--mob {
+  background-image: none;
+
+  @media (max-width: 768px) {
+    background-image: url(../images/world.svg);
+    background-size: 150%;
+    background-position: center bottom 290px;
+    background-repeat: no-repeat;
+  }
+}
+
 .consultation-and-export-wrapper {
   background-image: url(../images/world.svg);
   background-size: contain;
   background-position: center bottom -100px;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-image: none;
+  }
 }
 
 .consultation__section {
   padding-top: 0;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 .consultation {
@@ -19,6 +38,10 @@
   @media (max-width: 900px) {
     flex-direction: column;
     gap: 40px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 0;
   }
 }
 

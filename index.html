@@ -76,6 +76,12 @@
                 </span>
                 <span class="contact-component__text">+48 690-402-690</span>
               </a>
+              <!-- до контактів не відноситься, але стилі однакові -->
+              <button class="btn" type="button page-header__button">
+                <span class="contact-component__icon">
+                  <img src="./images/burger.svg" alt="Railcon Hots S.P.K" />
+                </span>
+              </button>
             </div>
 
             <button class="button page-header__button" type="button">
@@ -142,13 +148,13 @@
     </header>
     <!-- end header -->
 
-    <main>
+    <main class="main-page">
       <!-- start hero -->
       <section class="hero">
         <div class="container hero__container">
           <div class="hero-title__wrapper">
-            <div class="hero-title">
-              <h1 class="hero-title__first">
+            <h1 class="hero-title">
+              <div class="hero-title__first">
                 <span class="hero-title__text"
                   >Імпорт та експорт продукції</span
                 >
@@ -158,7 +164,7 @@
                     alt="Railcon Hots S.P.K"
                   />
                 </span>
-              </h1>
+              </div>
               <div class="hero-title__second">
                 <a class="hero-title__second-icon" rel="noopener noreferrer">
                   <img
@@ -170,7 +176,7 @@
                   >З України в Європейський союз</span
                 >
               </div>
-            </div>
+            </h1>
           </div>
 
           <div class="hero-second-block">
@@ -178,13 +184,14 @@
               class="familiarize-with-product-component link hero-call-action"
               rel="noopener noreferrer"
             >
-              <img
-                src="./images/main-page/hero/arrow-top-right.svg"
-                alt="Railcon Hots S.P.K"
-              />
-              <span class="familiarize-with-product-component__text">
+              <div class="familiarize-with-product-component__inner">
                 Ознайомитися з продукцією компанії
-              </span>
+                <img
+                  class="familiarize-with-product-component__icon"
+                  src="./images/main-page/hero/arrow-top-right.svg"
+                  alt="Railcon Hots S.P.K"
+                />
+              </div>
             </a>
           </div>
         </div>
@@ -211,8 +218,13 @@
               </p>
             </div>
             <img
-              class="about__img"
+              class="about__img about__img--desk"
               src="./images/main-page/about/box-desk.png"
+              alt="Railcon Hots S.P.K"
+            />
+            <img
+              class="about__img about__img--mob"
+              src="./images/main-page/about/box-mob.png"
               alt="Railcon Hots S.P.K"
             />
             <ul class="card-1-component__container">
@@ -556,18 +568,21 @@
                 </div>
               </li>
 
-              <li class="card-2-component card-2-component--not-border">
+              <li
+                class="card-2-component card-2-component--not-border card-2-component--last-item"
+              >
                 <a
-                  class="familiarize-with-product-component link"
+                  class="familiarize-with-product-component familiarize-with-product-component--categories link"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src="./images/main-page/hero/arrow-top-right.svg"
-                    alt="Railcon Hots S.P.K"
-                  />
-                  <span class="familiarize-with-product-component__text">
-                    Ознайомитися з продукцією компанії
-                  </span>
+                  <div class="familiarize-with-product-component__inner">
+                    Ознайомитися зі всією продукцією компанії
+                    <img
+                      class="familiarize-with-product-component__icon"
+                      src="./images/main-page/hero/arrow-top-right.svg"
+                      alt="Railcon Hots S.P.K"
+                    />
+                  </div>
                 </a>
               </li>
             </ul>
@@ -580,7 +595,9 @@
       <section class="section">
         <div class="container">
           <div class="companies">
-            <div class="section-title-desc section-title-desc--space-between">
+            <div
+              class="section-title-desc section-title-desc--space-between companies__title-desc"
+            >
               <div class="section-title-desc__title">
                 <div>Компанії, які</div>
                 <div>
@@ -750,231 +767,244 @@
       <!-- end section companies -->
 
       <!-- start consultation-and-export-wrapper -->
-      <div class="container">
-        <div class="consultation-and-export-wrapper">
-          <!-- start section consultation -->
-          <section class="section consultation__section">
-            <div class="consultation">
-              <div class="section-title-desc">
-                <h2 class="section-title-desc__title consultation__title">
-                  <div class="section-title-desc__title--accent">
-                    Потрібно замовити агропродукцію чи палети?
+      <div class="consultation-and-export-wrapper--mob">
+        <div class="container">
+          <div class="consultation-and-export-wrapper">
+            <!-- start section consultation -->
+            <section class="section consultation__section">
+              <div class="consultation">
+                <div class="section-title-desc">
+                  <h2 class="section-title-desc__title consultation__title">
+                    <div class="section-title-desc__title--accent">
+                      Потрібно замовити агропродукцію чи палети?
+                    </div>
+                    <div>
+                      Замовте консультацію від провідного Екcпортера в Європі.
+                    </div>
+                  </h2>
+                  <div
+                    class="section-title-desc__desc section-title-desc__desc--third-color consultation__desc"
+                  >
+                    Lorem ipsum dolor sit amet consectetur. Cras pharetra at
+                    tristique dignissim sit morbi pellentesque turpis. Sapien id
+                    morbi nunc risus in. Lorem egestas tempus quam fermentum
+                    ultricies nulla. In hac eget bibendum gravida.
                   </div>
-                  <div>
-                    Замовте консультацію від провідного Екcпортера в Європі.
-                  </div>
-                </h2>
-                <div
-                  class="section-title-desc__desc section-title-desc__desc--third-color consultation__desc"
-                >
-                  Lorem ipsum dolor sit amet consectetur. Cras pharetra at
-                  tristique dignissim sit morbi pellentesque turpis. Sapien id
-                  morbi nunc risus in. Lorem egestas tempus quam fermentum
-                  ultricies nulla. In hac eget bibendum gravida.
-                </div>
-              </div>
-
-              <form class="form">
-                <div class="form-field__wrapper">
-                  <input class="form-field" type="text" id="name" required />
-                  <span class="form-field__custom-placeholder">
-                    Ваше Ім’я
-                    <span class="form-field__custom-placeholder--accent">*</span>
-                  </span>
                 </div>
 
-                <div class="form-field__wrapper">
-                  <input class="form-field" type="email" id="email" required />
-                  <span class="form-field__custom-placeholder">
-                    Ваш E-mail
-                    <span class="form-field__custom-placeholder--accent">*</span>
-                  </span>
-                </div>
-
-                <div class="form-field__wrapper">
-                  <input
-                    class="form-field"
-                    type="text"
-                    id="phone"
-                    pattern="\d{11}"
-                    required
-                  />
-                  <span class="form-field__custom-placeholder">
-                    (0__) ___-__-__
-                    <span class="form-field__custom-placeholder--accent">*</span>
-                  </span>
-                </div>
-
-                <div class="form-field__wrapper">
-                  <textarea class="form-field" id="message"></textarea>
-                  <span class="form-field__custom-placeholder">
-                    Розкажіть детальніше про продукцію яку хотіли б отримати
-                  </span>
-                </div>
-
-                <p class="form__field-help-text">
-                  * Поле обов’язкове до заповнення
-                </p>
-
-                <div>
-                  <button class="button consultation__btn" type="submit">
-                    <span>Поставити запитання</span>
-                    <img
-                      src="./images/arrows/arrow-right-2.svg"
-                      alt="Railcon Hots S.P.K"
-                    />
-                  </button>
-                </div>
-
-                <p class="form__help-text">
-                  Натискаючи кнопку “Поставити запитання” ви автоматично даєте
-                  згоду на обробку персональних даних
-                </p>
-              </form>
-            </div>
-          </section>
-          <!-- end section consultation -->
-
-          <!-- start section export -->
-          <section class="section">
-            <div class="export">
-              <div class="section-title-desc export__title-desc">
-                <h2 class="section-title-desc__title export__title">
-                  <div class="section-title-desc__title--accent">
-                    Ми експортуємо високоякісну
-                  </div>
-                  <div>
-                    <span class="section-title-desc__title--accent"
-                      >продукцію з України,
+                <form class="form">
+                  <div class="form-field__wrapper">
+                    <input class="form-field" type="text" id="name" required />
+                    <span class="form-field__custom-placeholder">
+                      Ваше Ім’я
+                      <span class="form-field__custom-placeholder--accent"
+                        >*</span
+                      >
                     </span>
-                    натомість
                   </div>
-                  <div>Екпортуємо її по всій Європі</div>
-                </h2>
-                <div
-                  class="section-title-desc__desc section-title-desc__desc--third-color export__desc"
-                >
-                  Нашими послугами користуються країни зі всього Єросоюзу. Ось
-                  країни, в які наша компанія найчастіше постачає продукцію:
-                </div>
 
-                <div class="swiper-with-dots-container swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/AT.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Австрія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/CZ.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Чехія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/DE.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Німеччина</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/Spain.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Іспанія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/FR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Франція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/GR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Греція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/AT.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Австрія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/CZ.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Чехія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/DE.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Німеччина</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/Spain.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Іспанія</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/FR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Франція</span>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="export__item">
-                        <img
-                          src="./images/main-page/export/GR.svg"
-                          alt="Railcon Hots S.P.K"
-                        />
-                        <span>Греція</span>
-                      </div>
-                    </div>
+                  <div class="form-field__wrapper">
+                    <input
+                      class="form-field"
+                      type="email"
+                      id="email"
+                      required
+                    />
+                    <span class="form-field__custom-placeholder">
+                      Ваш E-mail
+                      <span class="form-field__custom-placeholder--accent"
+                        >*</span
+                      >
+                    </span>
                   </div>
-                  <div class="swiper-with-dots-pagination"></div>
+
+                  <div class="form-field__wrapper">
+                    <input
+                      class="form-field"
+                      type="text"
+                      id="phone"
+                      pattern="\d{11}"
+                      required
+                    />
+                    <span class="form-field__custom-placeholder">
+                      (0__) ___-__-__
+                      <span class="form-field__custom-placeholder--accent"
+                        >*</span
+                      >
+                    </span>
+                  </div>
+
+                  <div class="form-field__wrapper">
+                    <textarea class="form-field" id="message"></textarea>
+                    <span class="form-field__custom-placeholder">
+                      Розкажіть детальніше про продукцію яку хотіли б отримати
+                    </span>
+                  </div>
+
+                  <p class="form__field-help-text">
+                    * Поле обов’язкове до заповнення
+                  </p>
+
+                  <div>
+                    <button class="button consultation__btn" type="submit">
+                      <span>Поставити запитання</span>
+                      <img
+                        src="./images/arrows/arrow-right-2.svg"
+                        alt="Railcon Hots S.P.K"
+                      />
+                    </button>
+                  </div>
+
+                  <p class="form__help-text">
+                    Натискаючи кнопку “Поставити запитання” ви автоматично даєте
+                    згоду на обробку персональних даних
+                  </p>
+                </form>
+              </div>
+            </section>
+            <!-- end section consultation -->
+
+            <!-- start section export -->
+            <section class="section">
+              <div class="export">
+                <div class="section-title-desc export__title-desc">
+                  <h2 class="section-title-desc__title export__title">
+                    <div class="section-title-desc__title--accent">
+                      Ми експортуємо високоякісну
+                    </div>
+                    <div>
+                      <span class="section-title-desc__title--accent"
+                        >продукцію з України,
+                      </span>
+                      натомість
+                    </div>
+                    <div>Екпортуємо її по всій Європі</div>
+                  </h2>
+                  <div
+                    class="section-title-desc__desc section-title-desc__desc--third-color export__desc"
+                  >
+                    Нашими послугами користуються країни зі всього Єросоюзу. Ось
+                    країни, в які наша компанія найчастіше постачає продукцію:
+                  </div>
+
+                  <div class="swiper-with-dots-container swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/AT.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Австрія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/CZ.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Чехія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/DE.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Німеччина</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/Spain.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Іспанія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/FR.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Франція</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/GR.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Греція</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/AT.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Австрія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/CZ.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Чехія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/DE.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Німеччина</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/Spain.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Іспанія</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/FR.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Франція</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="export__item">
+                          <img
+                            src="./images/main-page/export/GR.svg"
+                            alt="Railcon Hots S.P.K"
+                          />
+                          <span>Греція</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-with-dots-pagination"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-          <!-- end section export -->
+            </section>
+            <!-- end section export -->
+          </div>
         </div>
       </div>
       <!-- end consultation-and-export-wrapper -->
@@ -1284,7 +1314,7 @@
       <section class="section faq__section">
         <div class="container">
           <div class="faq">
-            <div class="section-title-desc">
+            <div class="section-title-desc faq__title-desc">
               <h2 class="section-title-desc__title">FAQ</h2>
             </div>
             <div class="faq__blocks">
@@ -1418,8 +1448,13 @@
               </div>
               <div class="faq__second-block">
                 <img
-                  class="faq__img"
+                  class="faq__img faq__img--desk"
                   src="./images/main-page/faq/container.png"
+                  alt="Railcon Hots S.P.K"
+                />
+                <img
+                  class="faq__img faq__img--mob"
+                  src="./images/main-page/faq/container-mob.png"
                   alt="Railcon Hots S.P.K"
                 />
               </div>
@@ -1519,7 +1554,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-first">
-          <img src="./images/logo-dark.svg" alt="">
+          <img src="./images/logo-dark.svg" alt="" />
         </div>
         <div class="footer-second">
           <nav>

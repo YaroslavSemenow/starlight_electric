@@ -49,8 +49,25 @@
 
 (function instSwiperWithDots() {
   var swiper = new Swiper(".swiper-with-dots-container", {
-    slidesPerView: 6,
-    spaceBetween: 20,
+    slidesPerView: 2,
+    spaceBetween: 15,
+    slidesPerView: 1.8,
+    spaceBetween: 11,
+    breakpoints: {
+      500: {
+        slidesPerView: 3,
+      },
+      650: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+      1550: {
+        slidesPerView: 6,
+      },
+    },
     pagination: {
       el: ".swiper-with-dots-pagination",
       clickable: true,

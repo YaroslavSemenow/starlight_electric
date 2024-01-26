@@ -15,6 +15,10 @@
 .export__title {
   max-width: 1222px;
   margin-bottom: 84px;
+
+  @media (max-width: 768px) {
+  margin-bottom: 0;
+  }
 }
 
 .export__desc {

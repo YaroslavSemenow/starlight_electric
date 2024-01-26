@@ -3,6 +3,10 @@
 // .companies {
 // }
 
+.companies__title-desc {
+  gap: 15px;
+}
+
 .companies__desc {
   max-width: 367px;
 }
@@ -14,18 +18,26 @@
 
   // налашутвання скролу для mozilla
   scrollbar-width: thin;
-  scrollbar-color: #ABABAB #EFEFEF;
+  scrollbar-color: #ababab #efefef;
+
+  @media (max-width: 768px) {
+    padding-bottom: 25px;
+  }
 }
 
-  // налашутвання скролу для всіх інших
+// налашутвання скролу для всіх інших
 .companies__list-wrap::-webkit-scrollbar {
   max-height: 4px;
+
+  @media (max-width: 768px) {
+    max-height: 2px;
+  }
 }
 .companies__list-wrap::-webkit-scrollbar-thumb {
-  background-color: #ABABAB;
+  background-color: #ababab;
 }
 .companies__list-wrap::-webkit-scrollbar-track {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .companies__list {
@@ -38,4 +50,11 @@
   height: 108px;
   min-width: 108px;
   min-height: 108px;
+
+  @media (max-width: 768px) {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    min-height: 58px;
+  }
 }
