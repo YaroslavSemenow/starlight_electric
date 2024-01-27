@@ -77,7 +77,7 @@
                 <span class="contact-component__text">+48 690-402-690</span>
               </a>
               <!-- до контактів не відноситься, але стилі однакові -->
-              <button class="btn" type="button page-header__button">
+              <button class="btn mobile-memu-btn" type="button" data-menu-open>
                 <span class="contact-component__icon">
                   <img src="./images/burger.svg" alt="Railcon Hots S.P.K" />
                 </span>
@@ -105,53 +105,13 @@
           </div>
         </div>
       </div>
-
-      <div class="mobile-menu is-hidden" data-menu>
-        <div class="mobile-menu__wrapper container">
-          <div>
-            <button class="menu-btn button" data-menu-close>
-              <svg class="menu-btn__icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-close-mobile-menu"></use>
-              </svg>
-            </button>
-          </div>
-
-          <div>
-            <ul class="mob-auth">
-              <li class="mob-auth__item">
-                <a
-                  href="tel:+380961111111"
-                  class="mob-auth__link mob-auth__link--big-text link"
-                >
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="mob-auth__item">
-                <a href="mailto:info@devstudio.com" class="mob-auth__link link">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-
-            <div class="mobile-socials">
-              <a class="mobile-socials__link link" href="">Instagram</a>
-              <span class="mobile-socials__line"></span>
-              <a class="mobile-socials__link link" href="">Twitter</a>
-              <span class="mobile-socials__line"></span>
-              <a class="mobile-socials__link link" href="">Facebook</a>
-              <span class="mobile-socials__line"></span>
-              <a class="mobile-socials__link link" href="">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <!-- end header -->
 
     <main class="main-page">
       <!-- start hero -->
       <section class="hero">
-        <div class="container hero__container">
+        <div class="hero__container">
           <div class="hero-title__wrapper">
             <h1 class="hero-title">
               <div class="hero-title__first">
@@ -1726,6 +1686,106 @@
       </div>
     </div>
     <!-- end backdrop -->
+
+    <!-- start mobile-menu -->
+    <div class="mobile-menu is-hidden" data-menu>
+      <div class="mobile-menu__wrapper container">
+        <div class="mobile-menu__header">
+          <a href="./index.html" class="link">
+            <img
+              class="mobile-menu__logo"
+              src="./images/logo-light.svg"
+              alt="Railcon Hots S.P.K"
+            />
+          </a>
+          <button class="icon-btn" data-menu-close>
+            <img src="./images/x.svg" alt="Railcon Hots S.P.K" />
+          </button>
+        </div>
+
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a
+              class="link mobile-menu__nav-item-link"
+              href="/"
+              rel="noopener noreferrer"
+              >Головна</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a
+              class="link mobile-menu__nav-item-link"
+              href="./catalog.html"
+              rel="noopener noreferrer"
+              >Продукція</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a
+              class="link mobile-menu__nav-item-link"
+              href="./about.html"
+              rel="noopener noreferrer"
+              >Про нас</a
+            >
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a
+              class="link mobile-menu__nav-item-link"
+              href="./contacts.html"
+              rel="noopener noreferrer"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+
+        <div class="mobile-menu__contacts">
+          <a class="contact-component link" href="mailto:buiro@railconhots.pl">
+            <span class="contact-component__icon">
+              <img src="./images/mail.svg" alt="Railcon Hots S.P.K" />
+            </span>
+            <span class="contact-component__text"
+              >buiro@railconhots.pl</span
+            >
+          </a>
+          <a class="contact-component link" href="tel:48690402690">
+            <span class="contact-component__icon">
+              <img src="./images/phone.svg" alt="Railcon Hots S.P.K" />
+            </span>
+            <span class="contact-component__text"
+              >+48 690-402-690</span
+            >
+          </a>
+          <a
+            class="contact-component link"
+            href="https://maps.app.goo.gl/4mtoi27rfL6AKbXz6"
+            target="_blank"
+          >
+            <span class="contact-component__icon">
+              <img src="./images/location.svg" alt="Railcon Hots S.P.K" />
+            </span>
+            <span class="contact-component__text"
+              >Jana Kasprowicza 145, 01-949 Warszawa, Польща</span
+            >
+          </a>
+        </div>
+
+        <div class="mobile-menu__footer">
+          <span>© 2023-2023, RAILCON HOTS SP.K.. All Rights Reservedm</span>
+          <span class="mobile-menu__footer-center">
+            <span>Privacy Policy</span><span>Public offer contract</span></span
+          >
+          <span>
+            <span>Powered by</span>
+            <img
+              style="display: inline"
+              src="./images/kantora.svg"
+              alt="Railcon Hots S.P.K"
+            />
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- end mobile-menu -->
 
     <script src="./plugins/swiper/swiper.min.js"></script>
     <script src="./js/modal.js"></script>
