@@ -136,9 +136,14 @@
   height: 640px;
 
   background-image: url(../images/main-page/hero/hero-auto.png);
-  background-size: cover;
-  background-position: left top 20px;
+  background-size: contain;
+  background-position: center top 20px;
   background-repeat: no-repeat;
+
+  @media (max-width: 1600px) {
+    background-size: cover;
+    background-position: left top 20px;
+  }
 
   @media (max-width: 768px) {
     height: 334px;

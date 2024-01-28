@@ -1,78 +1,255 @@
+@import url(../utils/_vars.scss);
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  overflow: auto;
 
-  min-width: 100%;
-  padding: 40px;
+  max-width: 1361px;
+  max-height: 95%;
+  width: calc(100% - 40px);
 
-  background-color: var(--primary-bcg-color);
+  background-color: $lightBackgroundColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: $borderRadius;
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+  transition: transform $transitionDuration $transitionTimingFunction;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.7);
-    transition: transform var(--transition-duration)
-      var(--transition-timing-function);
+    transition: transform $transitionDuration $transitionTimingFunction;
   }
+}
 
-  @media screen and (min-width: 480px) {
-    min-width: 450px;
-    min-height: 609px;
-  }
+.modal__inner {
+  padding: 80px;
 
-  @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+  @media (max-width: 768px) {
+    padding: 20px;
   }
 }
 
 .modal__close-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 20px;
+  right: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: unset;
-}
 
-.modal__close-icon {
-  fill: #000000;
-
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-
-  .modal__close-button:hover &,
-  .modal__close-button:focus & {
-    fill: var(--accent-color);
+  @media (max-width: 768px) {
+    width: 29px;
+    height: 29px;
   }
 }
 
-.modal__title {
-  display: block;
+.modal__close-button img {
+  width: 14px;
+  height: 14px;
 
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-
-  @media screen and (min-width: 1200px) {
-    line-height: calc(30 / 20);
+  @media (max-width: 768px) {
+    width: 9px;
+    height: 9px;
   }
+}
+
+// ========== modal-order ============
+
+.modal-order {
+  @media (max-width: 1200px) {
+    max-width: 850px;
+  }
+}
+
+.modal-order__inner {
+  display: flex;
+  gap: 60px;
+
+  @media (max-width: 1550px) {
+    gap: 40px;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.modal-order__title-desc,
+.modal-order__form {
+  width: 50%;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.modal-order__title-desc {
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    padding-right: 46px;
+  }
+}
+
+.modal-order__title {
+  @media (max-width: 1550px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    text-transform: none;
+  }
+}
+
+.modal-order__desc {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+// .modal-order__form {
+// }
+
+// ========== modal-product ============
+.modal-product {
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.modal-product__img-wrap {
+  min-width: 35%;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+
+    min-width: auto;
+    margin-top: 20px;
+  }
+}
+
+.modal-product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+  }
+}
+
+.modal-product__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: 1550px) {
+    padding: 80px 80px 80px 40px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 15px;
+
+    padding: 20px;
+  }
+}
+
+.modal-product__title {
+  @media (max-width: 1550px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 5px;
+
+    font-size: 22px;
+    line-height: calc(27 / 22);
+    text-transform: none;
+    text-align: center;
+  }
+}
+
+.modal-product__price-text {
+  margin-right: 25px;
+
+  @media (max-width: 768px) {
+    display: block;
+
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.modal-product__subtitle {
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+}
+
+.modal-product__price-text,
+.modal-product__subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: calc(27 / 24);
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.modal-product__price-text--accent {
+  color: $accentTextColor;
+}
+
+.modal-product__line {
+  height: 1px;
+  background-color: $firstAdditionalColors;
+}
+
+.modal-product__desc {
+  max-height: 218px;
+  padding-right: 35px;
+  margin-right: -40px;
+
+  color: $additionalTextColor;
+
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+    max-height: 228px;
+    padding-right: 20px;
+    margin-right: 0;
+  }
+}
+
+.modal-product__desc::-webkit-scrollbar {
+  max-width: 5px;
+}
+.modal-product__desc::-webkit-scrollbar-thumb {
+  background-color: $accentBackgroundColor;
+  border-radius: 30px;
+}
+.modal-product__desc::-webkit-scrollbar-track {
+  background-color: $lightBackgroundColor;
+  border-radius: 30px;
 }

@@ -1,4 +1,4 @@
-@import url(../../utils/_vars.scss);
+@import "../../utils/_vars.scss";
 
 // .companies {
 // }
@@ -16,16 +16,11 @@
 
   overflow-x: auto;
 
-  // налашутвання скролу для mozilla
-  scrollbar-width: thin;
-  scrollbar-color: #ababab #efefef;
-
   @media (max-width: 768px) {
     padding-bottom: 25px;
   }
 }
 
-// налашутвання скролу для всіх інших
 .companies__list-wrap::-webkit-scrollbar {
   max-height: 4px;
 

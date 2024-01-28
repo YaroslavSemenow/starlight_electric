@@ -87,7 +87,7 @@
               </button>
             </div>
 
-            <button class="button page-header__button" type="button">
+            <button class="button page-header__button" type="button"  data-order-modal-open>
               Замовити продукцію
             </button>
 
@@ -415,91 +415,178 @@
     </footer>
     <!-- end footer -->
 
-    <!-- start backdrop -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal__close-button button" data-modal-close>
-          <svg class="modal__close-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-close-modal"></use>
-          </svg>
-        </button>
-        <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
-        <form class="modal__form">
-          <div class="modal__form-field">
-            <label class="modal__form-label" for="name">Имя</label>
-            <span class="modal__input-wrap">
-              <input
-                class="modal__form-input"
-                type="text"
-                name="name"
-                id="name"
-              />
-              <svg class="modal__icon-input" width="18" height="18">
-                <use href="./images/sprite.svg#icon-name"></use>
-              </svg>
-            </span>
-          </div>
-
-          <div class="modal__form-field">
-            <label class="modal__form-label" for="tel">Телефон</label>
-            <span class="modal__input-wrap">
-              <input class="modal__form-input" type="tel" name="tel" id="tel" />
-              <svg class="modal__icon-input" width="18" height="18">
-                <use href="./images/sprite.svg#icon-tel"></use>
-              </svg>
-            </span>
-          </div>
-
-          <div class="modal__form-field">
-            <label class="modal__form-label" for="email">Почта</label>
-            <span class="modal__input-wrap">
-              <input
-                class="modal__form-input"
-                type="email"
-                name="email"
-                id="email"
-              />
-              <svg class="modal__icon-input" width="18" height="18">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-            </span>
-          </div>
-
-          <div class="modal__textarea-field">
-            <label class="modal__form-label" for="comment">Комментарий</label>
-            <textarea
-              class="modal__form-comment"
-              name="comment"
-              placeholder="Введите текст"
-              id="comment"
-            ></textarea>
-          </div>
-
-          <div class="modal__checkbox-field">
-            <input
-              class="modal__form-checkbox visually-hidden"
-              type="checkbox"
-              name="policy"
-              id="policy"
-            />
-            <label class="modal__checkbox-label" for="policy">
-              <span class="modal__checkbox-icon-wrap">
-                <svg width="13" height="12">
-                  <use href="./images/sprite.svg#icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a class="modal__checkbox-link" href="">Условия договора</a>
-            </label>
-          </div>
-
-          <button class="modal__button primary-btn button" type="submit">
-            Отправить
+     <!-- start order modal -->
+     <div class="backdrop backdrop--order-modal is-hidden" data-order-modal>
+      <div class="modal modal-order">
+        <div class="modal-order__inner modal__inner">
+          <button class="modal__close-button btn" data-order-modal-close>
+            <img src="./images/x-sm.svg" alt="Railcon Hots S.P.K" />
           </button>
-        </form>
+          <div class="section-title-desc modal-order__title-desc">
+            <h2 class="section-title-desc__title modal-order__title">
+              <span
+                class="section-title-desc__title--accent modal-order__title"
+              >
+                Потрібно замовити агропродукцію чи <br />
+                палети?
+              </span>
+              Замовте <br />
+              консультацію від провідного Екcпортера в Європі.
+            </h2>
+            <div
+              class="section-title-desc__desc section-title-desc__desc--third-color modal-order__desc"
+            >
+              Lorem ipsum dolor sit amet consectetur. Cras pharetra at tristique
+              dignissim sit morbi pellentesque turpis. Sapien id morbi nunc
+              risus in. Lorem egestas tempus quam fermentum ultricies nulla. In
+              hac eget bibendum gravida.
+            </div>
+          </div>
+          <form class="form modal-order__form">
+            <div class="form-field__wrapper">
+              <input class="form-field" type="text" id="name" />
+              <span class="form-field__custom-placeholder">
+                Ваше Ім’я
+                <span class="form-field__custom-placeholder--accent">*</span>
+              </span>
+            </div>
+
+            <div class="form-field__wrapper">
+              <input class="form-field" type="email" id="email" />
+              <span class="form-field__custom-placeholder">
+                Ваш E-mail
+                <span class="form-field__custom-placeholder--accent">*</span>
+              </span>
+            </div>
+
+            <div class="form-field__wrapper">
+              <input
+                class="form-field"
+                type="text"
+                id="phone"
+                pattern="\d{11}"
+              />
+              <span class="form-field__custom-placeholder">
+                (0__) ___-__-__
+                <span class="form-field__custom-placeholder--accent">*</span>
+              </span>
+            </div>
+
+            <div class="form-field__wrapper">
+              <textarea class="form-field" id="message"></textarea>
+              <span class="form-field__custom-placeholder">
+                Розкажіть детальніше про продукцію яку хотіли б отримати
+              </span>
+            </div>
+
+            <p class="form__field-help-text">
+              * Поле обов’язкове до заповнення
+            </p>
+
+            <div>
+              <button class="button consultation__btn" type="submit">
+                <span>Поставити запитання</span>
+                <img
+                  src="./images/arrows/arrow-right-2.svg"
+                  alt="Railcon Hots S.P.K"
+                />
+              </button>
+            </div>
+
+            <p class="form__help-text">
+              Натискаючи кнопку “Поставити запитання” ви автоматично даєте згоду
+              на обробку персональних даних
+            </p>
+          </form>
+        </div>
       </div>
     </div>
-    <!-- end backdrop -->
+    <!-- end order modal -->
+
+    <!-- start product modal -->
+    <div class="backdrop backdrop--product-modal is-hidden" data-product-modal>
+      <div class="modal modal-product">
+        <button class="modal__close-button btn" data-product-modal-close>
+          <img src="./images/x-sm.svg" alt="Railcon Hots S.P.K" />
+        </button>
+
+        <div class="modal-product__img-wrap">
+          <img
+            class="modal-product__img"
+            src="./images/img-for-product-modal.jpg"
+            alt="Railcon Hots S.P.K"
+          />
+        </div>
+        <div class="modal__inner modal-product__inner">
+          <h2 class="section-title-desc__title modal-product__title">
+            Пелети з деревини якості Premium Gold A1 En+
+          </h2>
+          <div class="modal-product__price">
+            <span class="modal-product__price-text">
+              <span class="modal-product__price-text--accent">1 234 грн</span>
+              &nbsp;/&nbsp;1 тонну
+            </span>
+            <button class="button consultation__btn" type="submit" data-product-modal-close data-order-modal-open>
+              <span>Залишити заявку</span>
+              <img
+                src="./images/arrows/arrow-right-2.svg"
+                alt="Railcon Hots S.P.K"
+              />
+            </button>
+          </div>
+
+          <div class="modal-product__line"></div>
+
+          <div class="modal-product__subtitle">Про продукцію</div>
+
+          <div class="modal-product__desc">
+            Lorem ipsum dolor sit amet consectetur. Porttitor imperdiet duis in
+            nisi morbi quam tristique. Adipiscing purus sit gravida quis
+            faucibus suspendisse mi ultricies ultrices. Adipiscing dui ut id et
+            id. Gravida sed sit tortor diam. Egestas egestas commodo blandit
+            mauris. Eget velit vel dolor in vel id rhoncus. Pulvinar lobortis
+            orci at tortor. Pellentesque mollis ultrices quis sed. Blandit
+            tristique varius massa facilisi imperdiet morbi id aliquet laoreet.
+            Elit tristique dignissim vel mauris cursus consectetur. At sit cras
+            molestie tortor. At adipiscing lacus amet convallis quis venenatis
+            ornare. Fusce consequat quis at bibendum. Amet congue adipiscing
+            vitae ac tincidunt dictum aliquam. Felis a tellus nisi leo. Etiam
+            feugiat neque cursus posuere. Eu ultrices nunc ac congue viverra
+            egestas magna faucibus pretium. Nulla malesuada urna sed libero.
+            Eget vestibulum tristique in eu. Integer dui condimentum a dignissim
+            eleifend. Egestas ac est arcu sed aenean etiam. Ut at donec aliquet
+            pretium. Auctor diam quam elementum in massa varius. Sit et neque a
+            sem velit adipiscing. Sapien elementum laoreet tortor laoreet rutrum
+            arcu integer. Enim odio in quam malesuada. A neque mattis nisi nunc
+            condimentum in diam interdum. Diam diam lobortis facilisis eget
+            tortor metus arcu convallis. Tempus purus tincidunt mauris sed.
+            Egestas massa ligula lectus enim hac egestas sed quam congue. Quam
+            erat phasellus egestas vulputate porttitor et. Mauris urna pretium
+            et in ultrices adipiscing sed aliquet risus. Et tincidunt morbi sit
+            tempus sodales pulvinar. Tortor cum ullamcorper ultrices pharetra
+            fermentum nunc. Urna ac vulputate commodo sollicitudin turpis.
+            Tempor curabitur praesent pretium erat egestas etiam lacinia ipsum
+            aliquam. Orci dui hac pellentesque ullamcorper vestibulum lorem
+            ultricies malesuada nibh. Mattis leo integer nisl vel morbi.
+            Fermentum nec dui feugiat eget. Nulla metus rhoncus vitae sit porta
+            suspendisse at blandit. Vitae quis volutpat nunc bibendum donec quam
+            massa. Pulvinar vestibulum id nunc volutpat. A sodales in massa id
+            mus. Ante fermentum arcu sit massa amet. Scelerisque mauris sem dui
+            commodo nibh commodo magna odio. Amet aenean eu faucibus dis aliquet
+            id scelerisque elit. Magnis nisl nec condimentum sed tortor sit orci
+            volutpat urna. Mus facilisis quis dignissim donec tellus
+            pellentesque in accumsan eget. Nibh nec amet facilisis tempus enim.
+            Proin aliquet pellentesque condimentum nisl magna placerat
+            dignissim. Vitae purus risus praesent dolor elit iaculis dui tempus.
+            Ullamcorper commodo amet egestas facilisis. Id tellus elementum
+            quisque massa diam ullamcorper donec. Nulla viverra pellentesque
+            parturient phasellus leo tincidunt duis aliquam et. Venenatis urna
+            velit est tortor interdum eget lorem maecenas.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end product modal -->
 
     <!-- start mobile-menu -->
     <div class="mobile-menu is-hidden" data-menu>

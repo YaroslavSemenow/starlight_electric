@@ -32,17 +32,12 @@
 
   overflow-y: auto;
 
-  // налашутвання скролу для mozilla
-  scrollbar-width: thin;
-  scrollbar-color: $accentBackgroundColor $lightBackgroundColor;
-
   @media (max-width: 768px) {
     max-height: 228px;
     padding-right: 20px;
   }
 }
 
-// налашутвання скролу для всіх інших
 .quality-assurance__desc::-webkit-scrollbar {
   max-width: 5px;
 }

@@ -2,16 +2,25 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999990;
+
   width: 100vw;
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity var(--transition-duration)
-      var(--transition-timing-function),
-    visibility var(--transition-duration) var(--transition-timing-function);
+  transition: opacity $transitionDuration $transitionTimingFunction,
+    visibility $transitionDuration $transitionTimingFunction;
   opacity: 1;
   visibility: visible;
+}
+
+.backdrop--product-modal {
+  z-index: 999991;
+}
+
+.backdrop--order-modal {
+  z-index: 999992;
 }
 
 .backdrop {

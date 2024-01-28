@@ -13,7 +13,7 @@
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
 @import url(../utils/_vars.scss);
-@import url(../../utils/_vars.scss);
+@import url(../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
 @import url(../../utils/_vars.scss);
@@ -314,9 +314,10 @@ img {
 }
 
 .btn {
+  padding: 0;
   border: transparent;
   border-radius: 5px;
-  padding: 0;
+  cursor: pointer;
 }
 
 .button {
@@ -841,7 +842,7 @@ img {
   font-weight: 500;
 }
 
-.card-2-component-title__link {
+.card-2-component-title__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1175,12 +1176,21 @@ textarea.form-field {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999990;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   visibility: visible;
+}
+
+.backdrop--product-modal {
+  z-index: 999991;
+}
+
+.backdrop--order-modal {
+  z-index: 999992;
 }
 
 .backdrop.is-hidden {
@@ -1195,8 +1205,11 @@ textarea.form-field {
   left: 0;
   z-index: 99999;
   overflow: auto;
+  display: none;
   width: 100%;
+  min-width: 100vw;
   height: 100%;
+  min-height: 100vh;
   background-color: #15161a;
   background-image: linear-gradient(rgba(21, 22, 26, 0.85), rgba(21, 22, 26, 0.85)), url(../images/world.svg);
   background-size: 170%;
@@ -1204,6 +1217,11 @@ textarea.form-field {
   background-repeat: no-repeat;
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
 }
 
 .mobile-menu.is-hidden {
@@ -1214,8 +1232,6 @@ textarea.form-field {
 }
 
 .mobile-menu__wrapper {
-  width: 100%;
-  height: 100%;
   padding-bottom: 30px;
 }
 
@@ -1299,67 +1315,254 @@ textarea.form-field {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  padding: 40px;
-  background-color: var(--primary-bcg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  overflow: auto;
+  max-width: 1361px;
+  max-height: 95%;
+  width: calc(100% - 40px);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
-  .modal {
-    min-width: 450px;
-    min-height: 609px;
-  }
+
+.modal__inner {
+  padding: 80px;
 }
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-width: 528px;
-    min-height: 581px;
+@media (max-width: 768px) {
+  .modal__inner {
+    padding: 20px;
   }
 }
 
 .modal__close-button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 20px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: unset;
 }
-
-.modal__close-icon {
-  fill: #000000;
-  transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-.modal__close-button:hover .modal__close-icon, .modal__close-button:focus .modal__close-icon {
-  fill: var(--accent-color);
-}
-
-.modal__title {
-  display: block;
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-@media screen and (min-width: 1200px) {
-  .modal__title {
-    line-height: 1.5;
+@media (max-width: 768px) {
+  .modal__close-button {
+    width: 29px;
+    height: 29px;
   }
+}
+
+.modal__close-button img {
+  width: 14px;
+  height: 14px;
+}
+@media (max-width: 768px) {
+  .modal__close-button img {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .modal-order {
+    max-width: 850px;
+  }
+}
+
+.modal-order__inner {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 1550px) {
+  .modal-order__inner {
+    gap: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .modal-order__inner {
+    flex-direction: column;
+  }
+}
+
+.modal-order__title-desc,
+.modal-order__form {
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .modal-order__title-desc,
+  .modal-order__form {
+    width: 100%;
+  }
+}
+
+.modal-order__title-desc {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .modal-order__title-desc {
+    padding-right: 46px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .modal-order__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .modal-order__title {
+    font-size: 22px;
+    line-height: 1.2272727273;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .modal-order__desc {
+    display: none;
+  }
+}
+
+.modal-product {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .modal-product {
+    flex-direction: column;
+  }
+}
+
+.modal-product__img-wrap {
+  min-width: 35%;
+}
+@media (max-width: 768px) {
+  .modal-product__img-wrap {
+    display: flex;
+    justify-content: center;
+    min-width: auto;
+    margin-top: 20px;
+  }
+}
+
+.modal-product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .modal-product__img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+  }
+}
+
+.modal-product__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1550px) {
+  .modal-product__inner {
+    padding: 80px 80px 80px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .modal-product__inner {
+    gap: 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .modal-product__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .modal-product__title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.2272727273;
+    text-transform: none;
+    text-align: center;
+  }
+}
+
+.modal-product__price-text {
+  margin-right: 25px;
+}
+@media (max-width: 768px) {
+  .modal-product__price-text {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-product__subtitle {
+    margin-bottom: 25px;
+  }
+}
+
+.modal-product__price-text,
+.modal-product__subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125;
+}
+@media (max-width: 768px) {
+  .modal-product__price-text,
+  .modal-product__subtitle {
+    font-size: 22px;
+  }
+}
+
+.modal-product__price-text--accent {
+  color: #64B500;
+}
+
+.modal-product__line {
+  height: 1px;
+  background-color: #DBDBDB;
+}
+
+.modal-product__desc {
+  max-height: 218px;
+  padding-right: 35px;
+  margin-right: -40px;
+  color: #8C8C8C;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  .modal-product__desc {
+    max-height: 228px;
+    padding-right: 20px;
+    margin-right: 0;
+  }
+}
+
+.modal-product__desc::-webkit-scrollbar {
+  max-width: 5px;
+}
+
+.modal-product__desc::-webkit-scrollbar-thumb {
+  background-color: #64B500;
+  border-radius: 30px;
+}
+
+.modal-product__desc::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 
 .hero {
@@ -1498,9 +1701,15 @@ textarea.form-field {
   flex-grow: 1;
   height: 640px;
   background-image: url(../images/main-page/hero/hero-auto.png);
-  background-size: cover;
-  background-position: left top 20px;
+  background-size: contain;
+  background-position: center top 20px;
   background-repeat: no-repeat;
+}
+@media (max-width: 1600px) {
+  .hero-second-block {
+    background-size: cover;
+    background-position: left top 20px;
+  }
 }
 @media (max-width: 768px) {
   .hero-second-block {
@@ -1572,8 +1781,6 @@ textarea.form-field {
 .companies__list-wrap {
   padding-bottom: 40px;
   overflow-x: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #ababab #efefef;
 }
 @media (max-width: 768px) {
   .companies__list-wrap {
@@ -1878,8 +2085,6 @@ textarea.form-field {
   padding-right: 25px;
   color: #8C8C8C;
   overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #64B500 #ffffff;
 }
 @media (max-width: 768px) {
   .quality-assurance__desc {

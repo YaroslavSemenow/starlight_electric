@@ -1,9 +1,11 @@
 @import url(../utils/_vars.scss);
 
 .btn {
+  padding: 0;
+  
   border: transparent;
   border-radius: 5px;
-  padding: 0;
+  cursor: pointer;
 }
 
 .button {
