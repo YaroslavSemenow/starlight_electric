@@ -9,19 +9,9 @@
 @import "./base/container";
 
 // components
-@import "./components/btn";
-@import "./components/icon-btn";
-@import "./components/contact-component";
-@import "./components/navigation-component";
-@import "./components/familiarize-with-product-component";
-@import "./components/breadcrumbs";
 
-// components/cards
-@import "./components/cards/card-1-component";
-@import "./components/cards/card-2-component";
 
 // components/form
-@import "./components/form/form-field";
 @import "./components/form/form";
 
 // layout
@@ -32,14 +22,3 @@
 @import "./layout/modal";
 
 // layout/sections
-@import "./layout/sections/hero";
-@import "./layout/sections/about";
-@import "./layout/sections/companies";
-@import "./layout/sections/consultation";
-@import "./layout/sections/export";
-@import "./layout/sections/certificates";
-@import "./layout/sections/cooperation";
-@import "./layout/sections/quality-assurance";
-@import "./layout/sections/faq";
-@import "./layout/sections/contacts";
-@import "./layout/sections/calculator";
