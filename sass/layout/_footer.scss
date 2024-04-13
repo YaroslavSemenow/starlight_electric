@@ -7,7 +7,7 @@
   background-size: contain;
   background-position: right 82px center;
   background-repeat: no-repeat;
-  
+
   @media (max-width: 768px) {
     background-image: url(../../images/footer-flash-mob.svg);
     background-position: right 20px top 36px;
@@ -20,7 +20,7 @@
 
   padding: 73px 0 81px 0;
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
     gap: 37px;
@@ -41,7 +41,7 @@
     width: 55%;
   }
 
-  @media (max-width:900px) {
+  @media (max-width: 900px) {
     flex-wrap: wrap;
     gap: 24px;
 
@@ -92,6 +92,11 @@
   }
 }
 
+.footer-bottom > span {
+  display: flex;
+  align-items: center;
+}
+
 .footer-bottom__center {
   position: absolute;
   left: 50%;
@@ -104,8 +109,6 @@
   @media (max-width: 1200px) {
     position: static;
     transform: none;
-
-    margin-bottom: 10px;
   }
 }
 
