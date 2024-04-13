@@ -1,43 +1,28 @@
-// text
-$darkTextColor: #15161a;
-$lighTextColor: #ffffff;
-$accentTextColor: #64B500;
-$additionalTextColor: #8C8C8C;
+:root {
+    --black-color: #28292c;
+    --dark-color: #000000;
+    --white-color: #ffffff;
+    --grey-color: #79797a;
+    --accent-color: #E0733E;
+    --accent-color-2: #BC470E;
 
-// background
-$darkBackgroundColor: #15161a;
-$lightBackgroundColor: #ffffff;
-$accentBackgroundColor: #64B500;
-$additionalBackgroundColor: #8C8C8C;
-
-// additional colors 
-$firstAdditionalColors: #DBDBDB;
-$secondAdditionalColors: #F6F6F6;
-
-//fonts
-$secondaryFontFamily: "Unbounded", sans-serif;
-$thirdFontFamily: "Inter", sans-serif;
-
-//other
-$borderRadius: 5px;
-$transitionDuration: 250ms;
-$transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
-
-// alt Railcon Hots S.P.K
+    --border-radius: 5px;
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 // breakpoints
 @media (max-width: 768px) {
-  
 }
 
 @media (max-width: 900px) {
-  
 }
 
 @media (max-width: 1200px) {
-  
 }
 
 @media (max-width: 1550px) {
-  
+}
+
+@media (max-width: 1750px) {
 }

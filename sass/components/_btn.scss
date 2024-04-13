@@ -1,47 +1,70 @@
-@import url(../utils/_vars.scss);
+.button {
+    position: relative;
 
-.btn {
-  padding: 0;
-  
-  border: transparent;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 18px 30px;
+
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--white-color);
+
+    background-color: var(--accent-color);
+    border: transparent;
+    border-radius: 62px;
+    cursor: pointer;
+    overflow: hidden;
+    transition:  background-color 0.55s ease-in-out;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+}
+    
+.button:hover {
+    background-color: var(--accent-color-2);
+    transition: background-color 0.3s ease-in;
 }
 
-.button {
-  padding: 18px 30px;
-
-  font-family: inherit;
-  font-size: 16px;
-  color: $lighTextColor;
-
-  background-color: $accentBackgroundColor;
-  border: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
+.button__inner {
+    position: relative;
+    z-index: 10;
 
     width: 100%;
-  }
+    height: 100%;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+
+    width: 1px;
+    height: 1px;
+
+    border-radius: 50px;
+    background-color: var(--accent-color-2);
+    transform: scale(0);
+    transition: transform 0.3s ease-in;
+}
+
+.button:hover::after {
+    transform: scale(200) translateX(-10%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.button--sm {
+    padding: 8px 16px;
 }
 
 .button--nowrap {
-  white-space: nowrap;
-}
-
-.button--bold {
-  font-weight: 700;
-}
-
-.button--second-font {
-  font-family: $thirdFontFamily;
+    white-space: nowrap;
 }
 
 .button--with-icon {
-  display: inline-flex;
-  gap: 10px;
-  align-items: center;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
 }

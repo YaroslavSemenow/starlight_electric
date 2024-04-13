@@ -9,8 +9,8 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity $transitionDuration $transitionTimingFunction,
-    visibility $transitionDuration $transitionTimingFunction;
+  // transition: opacity $transitionDuration $transitionTimingFunction,
+  //   visibility $transitionDuration $transitionTimingFunction;
   opacity: 1;
   visibility: visible;
 }

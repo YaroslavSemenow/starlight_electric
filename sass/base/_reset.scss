@@ -1,23 +1,23 @@
-@import url(../utils/_vars.scss);
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Inter Tight", sans-serif;
-  color: $darkTextColor;
+  color: var(--grey-color);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: calc(23 / 16);
   font-weight: 400;
 
-  background-color: $lightBackgroundColor;
+  background-color: var(--white-color);
 }
 
 h1,
@@ -48,7 +48,7 @@ img {
   display: inline;
 }
 
-.link {
+a {
   text-decoration: none;
   cursor: pointer;
 }

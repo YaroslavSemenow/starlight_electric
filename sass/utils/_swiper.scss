@@ -1,5 +1,3 @@
-@import url(./utils/_vars.scss);
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -22,7 +20,7 @@
     min-width: 20px;
     min-height: 20px;
 
-    background: $secondAdditionalColors;
+    // background: $secondAdditionalColors;
     opacity: 1;
     border-radius: 50%;
   }
@@ -67,8 +65,8 @@
     height: 50px;
 
     border-radius: 50%;
-    border: 10px solid $darkBackgroundColor;
-    background-color: $lightBackgroundColor;
+    // border: 10px solid $darkBackgroundColor;
+    // background-color: $lightBackgroundColor;
 
     cursor: pointer;
 

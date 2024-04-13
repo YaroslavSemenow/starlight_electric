@@ -9,10 +9,10 @@
 @import "./base/container";
 
 // components
-
+@import "./components/btn";
 
 // components/form
-@import "./components/form/form";
+@import "./components/form";
 
 // layout
 @import "./layout/page-header";
@@ -22,3 +22,26 @@
 @import "./layout/modal";
 
 // layout/sections
+@import "./layout/sections/hero";
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
+
+  background-color: var(--accent-color);
+  border-radius: 50px;
+}
+
+.location-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--white-color);
+}

@@ -1,47 +1,98 @@
-@import url(../utils/_vars.scss);
-
 .page-header {
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
 
-  padding: 12px 0;
   width: 100%;
 
-  transition: all $transitionDuration $transitionTimingFunction;
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
 
-  // dark background
-  .page-header__logo-dark,
-  .page-header__localisation--icon-dark {
-    display: none;
+.page-header-desk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 28px 80px;
+  max-width: 1760px;
+  margin: 0 auto;
+
+  @media (max-width: 1550px) {
+    padding: 28px 20px;
   }
 
-  @media (max-width: 768px) {
-    padding: 15px 0;
+  @media (max-width: 900px) {
+    display: none;
   }
 }
 
-.page-header--light-background {
-  border-bottom: 1px solid $firstAdditionalColors;
+.page-header-desk__left {
+}
 
-  .page-header__logo-light,
-  .page-header__localisation--icon-light {
-    display: none;
+.page-header-desk__right {
+  display: flex;
+}
+
+.page-header-desk-nav {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+
+  margin-right: 142px;
+
+  @media (max-width: 1750px) {
+    margin-right: 70px;
   }
 
-  .page-header__logo-dark,
-  .page-header__localisation--icon-dark {
-    display: block;
-  }
-
-  .navigation-component__link,
-  .contact-component__text,
-  .page-header__localisation-text {
-    color: $darkTextColor;
+  @media (max-width: 1550px) {
+    margin-right: 35px;
+    gap: 15px;
   }
 }
 
-.page-header__container {
-  height: 100%;
+.page-header-desk-nav__item a {
+  color: var(--white-color);
+}
+
+.page-header-desk__contacts {
+  display: flex;
+  gap: 12px;
+
+  margin-right: 25px;
+
+  @media (max-width: 1250px) {
+    margin-right: 0;
+  }
+}
+
+.page-header-desk__contacts-btn-wrap {
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.page-header-desk__location {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1250px) {
+    display: none;
+  }
+}
+
+.page-header-mob {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 23px 20px;
+  }
+}
+.page-header-mob__btn {
+  border: transparent;
+  background: transparent;
 }
