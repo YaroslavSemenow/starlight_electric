@@ -1,15 +1,80 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
-.form--row {
-  flex-direction: row;
+.form input,
+.form textarea {
+  width: 100%;
+  padding-bottom: 14px;
+
+  border: transparent;
+  border-bottom: 1px solid var(--grey-color);
+  resize: none;
+  outline: transparent;
+
+  &::placeholder {
+    vertical-align: bottom;
+    font-size: 16px;
+  }
 }
 
-.form__help-text {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18.2px;
+.form input {
+  margin-bottom: 24px;
+}
+
+.textarea-wrap {
+  position: relative;
+}
+
+.textarea-placeholder {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+}
+
+.form textarea {
+  min-height: 150px;
+}
+
+.form__control {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+
+  margin-top: 38px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.form__control button {
+  min-width: 190px;
+}
+
+.form__checkbox-wrap {
+  display: flex;
+  gap: 6px;
+
+  & > * {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 5px;
+  }
+}
+
+.form__checkbox {
+  width: 17px !important;
+  height: 17px;
+}
+
+.form__checkbox:checked {
+  color: var(--accent-color);
+  background-color: transparent;
 }

@@ -1,11 +1,16 @@
 .button {
   position: relative;
 
+  display: inline-flex;
+
   padding: 18px 30px;
+  min-height: 59px;
+  height: 59px;
 
   font-family: inherit;
   font-size: 16px;
   color: var(--white-color);
+  white-space: nowrap;
 
   background-color: var(--accent-color);
   border: transparent;
@@ -18,7 +23,7 @@
     display: flex;
     justify-content: center;
 
-    min-width: 335px;
+    width: 100%;
   }
 }
 
@@ -66,4 +71,11 @@
   display: inline-flex;
   gap: 10px;
   align-items: center;
+}
+
+.button--width-100 {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
 }

@@ -21,112 +21,95 @@
   });
 })();
 
-// =================== приховуємо кастомний плейсхолдер, коли інпут не пустий ==========================
+// =================== swiper з дотами ==========================
 
-(function toggleCustomPlaceholder() {
-  const inputWrapArr = document.querySelectorAll(".form-field__wrapper");
-  const hideCustomPlaceholderClass = "form-field__custom-placeholder--hidden";
+// (function instSwiperWithDots() {
+//   var swiper = new Swiper(".swiper-with-dots-container", {
+//     slidesPerView: 2,
+//     spaceBetween: 15,
+//     slidesPerView: 1.8,
+//     spaceBetween: 11,
+//     breakpoints: {
+//       500: {
+//         slidesPerView: 3,
+//       },
+//       650: {
+//         slidesPerView: 4,
+//       },
+//       1200: {
+//         slidesPerView: 5,
+//         spaceBetween: 20,
+//       },
+//       1550: {
+//         slidesPerView: 6,
+//       },
+//     },
+//     pagination: {
+//       el: ".swiper-with-dots-pagination",
+//       clickable: true,
+//       renderBullet: function (index, className) {
+//         return `<span class="${className}">
+//             <span class="${className}__inner"></span>
+//           </span>`;
+//       },
+//     },
+//   });
+// })();
 
-  if (!inputWrapArr?.length) return;
+// =================== accordion в секції services ==========================
 
-  inputWrapArr.forEach((inputWrapEl) => {
-    const input = inputWrapEl.querySelector(".form-field");
-    const customPlaceholder = inputWrapEl.querySelector(
-      ".form-field__custom-placeholder"
-    );
+(function accordionServices() {
+  const itemArr = document.querySelectorAll(".services__item");
 
-    input.addEventListener("input", (e) => {
-      if (e.target.value.trim() === "") {
-        customPlaceholder.classList.remove(hideCustomPlaceholderClass);
+  if (!itemArr?.length) return;
+
+  itemArr.forEach((item) => {
+    const accordion = item.querySelector(".services__item-accordion");
+    const openBtn = item.querySelector(".services__item-bottom-button.open");
+    const closeBtn = item.querySelector(".services__item-bottom-button.close");
+
+    openBtn.addEventListener("click", () => {
+      accordion.classList.add("is-active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      accordion.classList.remove("is-active");
+    });
+  });
+})();
+
+// =================== приховуємо кастомний плейсхолдер ==========================
+
+(function checkTextarea() {
+  const textareaWrapArr = document.querySelectorAll(".textarea-wrap");
+
+  textareaWrapArr.forEach((textareaWrap) => {
+    const textarea = textareaWrap.querySelector("textarea");
+    const placeholder = textareaWrap.querySelector(".textarea-placeholder");
+
+    textarea.addEventListener("input", (e) => {
+      if (e.target.value.trim() !== "") {
+        placeholder.style.display = "none";
       } else {
-        customPlaceholder.classList.add(hideCustomPlaceholderClass);
+        placeholder.style.display = "block";
       }
     });
   });
 })();
 
-// =================== swiper з дотами ==========================
+// кастомний чекбокс
 
-(function instSwiperWithDots() {
-  var swiper = new Swiper(".swiper-with-dots-container", {
-    slidesPerView: 2,
-    spaceBetween: 15,
-    slidesPerView: 1.8,
-    spaceBetween: 11,
-    breakpoints: {
-      500: {
-        slidesPerView: 3,
-      },
-      650: {
-        slidesPerView: 4,
-      },
-      1200: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-      1550: {
-        slidesPerView: 6,
-      },
-    },
-    pagination: {
-      el: ".swiper-with-dots-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return `<span class="${className}">
-            <span class="${className}__inner"></span>
-          </span>`;
-      },
-    },
-  });
-})();
+(function toggleCheckbox() {
+  const checkboxArr = document.querySelectorAll("form__checkbox");
 
-// =================== swiper з сертифікатами ==========================
+  checkboxArr.forEach((checkbox) => {
+    checkbox.addEventListener("click", () => {
+      const isChecked = event.target.checked;
 
-(function instSwiperWithDots() {
-  const swiper = new Swiper(".swiper-certificates-container", {
-    slidesPerView: 1.8,
-    spaceBetween: 11,
-    breakpoints: {
-      500: {
-        slidesPerView: 2.2,
-      },
-      650: {
-        slidesPerView: 3,
-        spaceBetween: 26,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-certificates__button-next",
-      prevEl: ".swiper-certificates__button-prev",
-    },
-  });
-})();
-
-// =================== accordion в секції FAQ ==========================
-
-(function accordionFAQ() {
-  const accordionArr = document.querySelectorAll(".faq-list__item");
-
-  if (!accordionArr?.length) return;
-
-  accordionArr.forEach((accordion) => {
-    const dropdown = accordion.querySelector(".faq-list__desc");
-    const btn = accordion.querySelector(".faq-list__button");
-    const minusImg = "./images/minus.svg";
-    const plusImg = "./images/plus.svg";
-
-    btn.addEventListener("click", () => {
-      if (!!dropdown.style.maxHeight) {
-        dropdown.style.maxHeight = null;
-        dropdown.style.marginTop = null;
-        btn.src = plusImg;
+      if (isChecked) {
+        checkbox.classList.add("checked");
       } else {
-        dropdown.style.maxHeight = dropdown.scrollHeight + "px";
-        dropdown.style.marginTop = "20px";
-        btn.src = minusImg;
+        checkbox.classList.remove("checked");
       }
     });
   });
