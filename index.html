@@ -13,6 +13,9 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./plugins/swiper/swiper.min.css" />
+    <link href="./plugins/lightbox/lightbox.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- start header -->
@@ -866,7 +869,7 @@
       </div>
       <!-- end comparison -->
 
-      <!-- start comparison -->
+      <!-- start help -->
       <div class="container">
         <div class="help section">
           <div class="help-first">
@@ -920,20 +923,749 @@
                 </button>
 
                 <div class="form__checkbox-wrap">
-                  <input type="checkbox" class="form__checkbox" id="checkbox"></input>
-                  <label for="checkbox">I agree to processing of my personal data</label>
+                  <input type="checkbox" class="form__checkbox" id="checkbox" />
+                  <label for="checkbox"
+                    >I agree to processing of my personal data</label
+                  >
                 </div>
               </div>
             </form>
           </div>
           <div class="help-third">
             <div class="help-third__img">
-              <img src="./images/help-flash.png" alt="">
+              <img src="./images/help-flash.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <!-- end comparison -->
+      <!-- end help -->
+
+      <!-- start reviews -->
+      <div class="reviews__wrapper">
+        <div class="container">
+          <div class="reviews section">
+            <div class="reviews__header">
+              <h2 class="reviews__title section__title section__title--light">
+                What Client Say About Us?
+              </h2>
+              <div class="reviews__rating">
+                <div class="reviews__rating-top">
+                  <p class="reviews__rating-text">
+                    <span class="reviews__rating-text--big">10</span>
+                    <span class="reviews__rating-text--small">/</span>
+                    <span class="reviews__rating-text--small">10</span>
+                  </p>
+                  <div class="reviews__rating-star">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.18437 7.875L2.79375 5.24063L0.75 3.46875L3.45 3.23438L4.5 0.75L5.55 3.23438L8.25 3.46875L6.20625 5.24063L6.81562 7.875L4.5 6.47812L2.18437 7.875Z"
+                        fill="#E0733E"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.18437 7.875L2.79375 5.24063L0.75 3.46875L3.45 3.23438L4.5 0.75L5.55 3.23438L8.25 3.46875L6.20625 5.24063L6.81562 7.875L4.5 6.47812L2.18437 7.875Z"
+                        fill="#E0733E"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.18437 7.875L2.79375 5.24063L0.75 3.46875L3.45 3.23438L4.5 0.75L5.55 3.23438L8.25 3.46875L6.20625 5.24063L6.81562 7.875L4.5 6.47812L2.18437 7.875Z"
+                        fill="#E0733E"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.18437 7.875L2.79375 5.24063L0.75 3.46875L3.45 3.23438L4.5 0.75L5.55 3.23438L8.25 3.46875L6.20625 5.24063L6.81562 7.875L4.5 6.47812L2.18437 7.875Z"
+                        fill="#E0733E"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                    >
+                      <path
+                        d="M2.18437 7.875L2.79375 5.24063L0.75 3.46875L3.45 3.23438L4.5 0.75L5.55 3.23438L8.25 3.46875L6.20625 5.24063L6.81562 7.875L4.5 6.47812L2.18437 7.875Z"
+                        fill="#E0733E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p class="reviews__rating-desc">
+                  average rating among our users
+                </p>
+              </div>
+            </div>
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <h3 class="reviews__item-title">
+                  <span>SE</span>
+                  <span class="reviews__item-title--light">10/10</span>
+                </h3>
+                <p class="reviews__item-subtitle">Halton Hills, ON</p>
+                <div class="reviews__item-line"></div>
+                <h3 class="reviews__item-title">Replace 50 Outlets</h3>
+                <p class="reviews__item-subtitle">
+                  <span>Electricians review in Halton Hills</span>
+                  <span>02/21/2023</span>
+                </p>
+                <p class="reviews__item-desk">
+                  Taras provided a very competitive quote. He came to my house
+                  to assess the work required. He provided a quote within two
+                  days and I was able to schedule the work for the next week. He
+                  arrived on time and completed the job as agreed to. He also
+                  installed a light for me and fixed a bathroom switch that was
+                  previously not installed correctly. I was very happy with the
+                  work and would recommend Taras for all your electrical needs.
+                </p>
+              </li>
+              <li class="reviews__item">
+                <h3 class="reviews__item-title">
+                  <span>Maria M.</span>
+                  <span class="reviews__item-title--light">10/10</span>
+                </h3>
+                <p class="reviews__item-subtitle">Mississauga, On</p>
+                <div class="reviews__item-line"></div>
+                <h3 class="reviews__item-title">
+                  All New Wiring Throughout The House, Pot Lights, Light
+                  Fixtures And Panel Change
+                </h3>
+                <p class="reviews__item-subtitle">
+                  <span>Electricians review in Mississauga</span>
+                  <span>10/14/2022</span>
+                </p>
+                <p class="reviews__item-desk">
+                  Taras was really neat and cleaned everything after himself,
+                  the job was done perfect, within the timeline. He exceeded my
+                  expectations and I was really happy with the final look.
+                </p>
+              </li>
+              <li class="reviews__item">
+                <h3 class="reviews__item-title">
+                  <span>Chaitanya in Toronto</span>
+                  <span class="reviews__item-title--light">10/10</span>
+                </h3>
+                <p class="reviews__item-subtitle">Oakville, ON</p>
+                <div class="reviews__item-line"></div>
+                <h3 class="reviews__item-title">Electrical Panel Upgrade</h3>
+                <p class="reviews__item-subtitle">
+                  <span>Electricians review in Oakville</span>
+                  <span>03/17/2023</span>
+                </p>
+                <p class="reviews__item-desk">
+                  I wanted to upgrade our home panel from 100a to 200a. Taras
+                  from Starlight was prompt in all his communication. Gave me a
+                  great rate and handled all communication with the hydro. Job
+                  was completed on time.
+                </p>
+              </li>
+            </ul>
+            <div class="hero__buttons">
+              <a class="button" href="#contacts">
+                <span class="button__inner button--with-icon">
+                  <span>Get A Quote</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_80_110)">
+                      <path
+                        d="M7.9375 1.40625H8.6875C8.6875 1.07773 8.4737 0.787445 8.15996 0.690002C7.84622 0.592558 7.50558 0.710638 7.31947 0.981353L7.9375 1.40625ZM7.9375 6.09375H7.1875C7.1875 6.50796 7.52329 6.84375 7.9375 6.84375V6.09375ZM11.2188 6.09375L11.8368 6.51865C11.9946 6.28914 12.0122 5.99108 11.8825 5.74459C11.7529 5.49809 11.4973 5.34375 11.2188 5.34375V6.09375ZM6.0625 13.5938H5.3125C5.3125 13.9223 5.5263 14.2126 5.84004 14.31C6.15378 14.4074 6.49442 14.2894 6.68053 14.0186L6.0625 13.5938ZM6.0625 8.90625H6.8125C6.8125 8.49204 6.47671 8.15625 6.0625 8.15625V8.90625ZM2.78125 8.90625L2.16322 8.48135C2.00543 8.71087 1.98782 9.00892 2.11748 9.25541C2.24715 9.50191 2.50273 9.65625 2.78125 9.65625V8.90625ZM7.1875 1.40625V6.09375H8.6875V1.40625H7.1875ZM7.9375 6.84375H11.2188V5.34375H7.9375V6.84375ZM10.6007 5.66885L5.44447 13.1689L6.68053 14.0186L11.8368 6.51865L10.6007 5.66885ZM6.8125 13.5938V8.90625H5.3125V13.5938H6.8125ZM6.0625 8.15625H2.78125V9.65625H6.0625V8.15625ZM3.39928 9.33115L8.55553 1.83115L7.31947 0.981353L2.16322 8.48135L3.39928 9.33115Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_80_110">
+                        <rect
+                          width="14"
+                          height="14"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </a>
+              <a
+                class="button--with-icon hero__buttons-link"
+                href="https://www.instagram.com/starlightelectric/"
+                target="_blank"
+              >
+                <span>View more reviews</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="15"
+                  viewBox="0 0 14 15"
+                  fill="none"
+                >
+                  <path
+                    d="M4.08337 2.25L9.91671 7.5L4.08337 12.75"
+                    stroke="#E3E7EA"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end reviews -->
+
+      <!-- start portfolio -->
+      <div class="container">
+        <div class="portfolio section">
+          <h2 class="section__title portfolio__title">Portfolio</h2>
+          <div class="portfolio__switchers-wrapper">
+            <div class="portfolio__switchers">
+              <button class="portfolio__switchers-btn selected">
+                Residential
+              </button>
+              <button class="portfolio__switchers-btn">Commercial</button>
+              <button class="portfolio__switchers-btn">Industrial</button>
+            </div>
+          </div>
+
+          <div class="portfolio__gallery">
+            <a
+              class="t1"
+              href="./images/portfolio/1.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/1.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t2"
+              href="./images/portfolio/5.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/5.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t3"
+              href="./images/portfolio/4.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/4.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t4"
+              href="./images/portfolio/2.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/2.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t5"
+              href="./images/portfolio/3.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/3.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t6"
+              href="./images/portfolio/2.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/2.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+            <a
+              class="t7"
+              href="./images/portfolio/6.png"
+              data-lightbox="roadtrip"
+            >
+              <img src="./images/portfolio/6.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <g filter="url(#filter0_d_1_967)">
+                  <mask
+                    id="mask0_1_967"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="14"
+                    y="14"
+                    width="24"
+                    height="24"
+                  >
+                    <rect x="14" y="14" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1_967)">
+                    <path
+                      opacity="0.4"
+                      d="M33.5424 34.5769L27.2616 28.2961C26.7616 28.7089 26.1866 29.032 25.5366 29.2653C24.8866 29.4987 24.2141 29.6153 23.5193 29.6153C21.8101 29.6153 20.3636 29.0236 19.1797 27.84C17.9959 26.6564 17.4039 25.2103 17.4039 23.5016C17.4039 21.7928 17.9957 20.3462 19.1793 19.1615C20.3628 17.9769 21.809 17.3846 23.5177 17.3846C25.2264 17.3846 26.6731 17.9766 27.8577 19.1604C29.0423 20.3443 29.6347 21.7908 29.6347 23.5C29.6347 24.2141 29.5148 24.8961 29.275 25.5461C29.0353 26.1961 28.7154 26.7615 28.3154 27.2423L34.5962 33.5231L33.5424 34.5769ZM23.5193 28.1154C24.8077 28.1154 25.8991 27.6683 26.7933 26.774C27.6876 25.8798 28.1347 24.7885 28.1347 23.5C28.1347 22.2115 27.6876 21.1202 26.7933 20.2259C25.8991 19.3317 24.8077 18.8846 23.5193 18.8846C22.2308 18.8846 21.1395 19.3317 20.2452 20.2259C19.351 21.1202 18.9039 22.2115 18.9039 23.5C18.9039 24.7885 19.351 25.8798 20.2452 26.774C21.1395 27.6683 22.2308 28.1154 23.5193 28.1154ZM22.7693 26.1923V24.25H20.827V22.75H22.7693V20.8077H24.2693V22.75H26.2116V24.25H24.2693V26.1923H22.7693Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1_967"
+                    x="-3"
+                    y="-3"
+                    width="58"
+                    height="58"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1_967"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1_967"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end portfolio -->
     </main>
 
     <!-- start footer -->
@@ -1096,6 +1828,7 @@
     </div>
     <!-- end mobile-menu -->
 
+    <script src="./plugins/lightbox/lightbox.js"></script>
     <script src="./plugins/swiper/swiper.min.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/main.js"></script>

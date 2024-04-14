@@ -1,0 +1,143 @@
+.reviews__wrapper {
+  background-color: var(--black-color);
+}
+
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (min-width: 900px) {
+    background-image: url(../../../images/reviews-img.svg);
+    background-size: 421px 421px;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 60px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.reviews__rating {
+  margin-top: 20px;
+  margin-right: 95px;
+
+  @media (max-width: 900px) {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.reviews__rating-top {
+  display: flex;
+  align-items: baseline;
+}
+
+.reviews__rating-text {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+
+  margin-right: 8px;
+}
+
+.reviews__rating-text--big {
+  color: var(--accent-color);
+  font-size: 45px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.reviews__rating-text--small {
+  font-size: 14px;
+}
+
+.reviews__rating-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.reviews__rating-desc {
+  margin-top: 15px;
+  color: var(--white-color);
+}
+
+.reviews__list {
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 40px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.reviews__item {
+  padding: 40px;
+  width: 32%;
+  border-radius: 8px;
+  background: #222325;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.reviews__item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12px;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--accent-color);
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.reviews__item-title--light {
+  color: var(--white-color);
+}
+
+.reviews__item-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.reviews__item-desk {
+  color: var(--white-color);
+}
+
+.reviews__item-line {
+  height: 1px;
+  margin-bottom: 12px;
+  background-color: var(--grey-color);
+}

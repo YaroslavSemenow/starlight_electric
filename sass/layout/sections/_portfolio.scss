@@ -1,0 +1,159 @@
+.portfolio {
+  margin-top: 180px;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.portfolio__title {
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.portfolio__switchers-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 65px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.portfolio__switchers {
+  display: inline-flex;
+  gap: 38px;
+
+  margin: 0 auto;
+  padding: 10px;
+
+  border-radius: 77px;
+  border: 1px solid var(--light-grey-color);
+
+  @media (max-width: 768px) {
+    gap: 7px;
+  }
+}
+
+.portfolio__switchers-btn {
+  padding: 8px 16px;
+
+  color: var(--dark-color);
+
+  border-radius: 47px;
+  border: transparent;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &.selected {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.portfolio__gallery {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px 25px;
+  grid-template-areas:
+    "t1 t2 t4"
+    "t3 t3 t4"
+    "t5 t6 t7";
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 8px;
+  }
+
+  a {
+    position: relative;
+    border-radius: 6px;
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .t1 {
+    grid-area: t1;
+    max-height: 425px;
+  }
+  .t2 {
+    grid-area: t2;
+    max-height: 425px;
+  }
+  .t3 {
+    grid-area: t3;
+    max-height: 425px;
+  }
+  .t4 {
+    grid-area: t4;
+    max-height: 900px;
+  }
+  .t5 {
+    grid-area: t5;
+    max-height: 425px;
+  }
+  .t6 {
+    grid-area: t6;
+    max-height: 425px;
+  }
+  .t7 {
+    grid-area: t7;
+    max-height: 425px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 9px 9px;
+    grid-template-areas:
+      "t1 t2"
+      "t3 t3"
+      "t4 t6"
+      "t5 t6"
+      "t7 t7"
+      "t7 t7";
+
+    .t1 {
+      grid-area: t1;
+      max-height: 163px;
+    }
+    .t2 {
+      grid-area: t2;
+      max-height: 163px;
+    }
+    .t3 {
+      grid-area: t3;
+      max-height: 163px;
+    }
+    .t4 {
+      grid-area: t4;
+      max-height: 163px;
+    }
+    .t5 {
+      grid-area: t5;
+      max-height: 163px;
+    }
+    .t6 {
+      grid-area: t6;
+      max-height: 335px;
+    }
+    .t7 {
+      grid-area: t7;
+      max-height: 335px;
+    }
+  }
+}
