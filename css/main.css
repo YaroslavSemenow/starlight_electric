@@ -1529,11 +1529,26 @@ a {
   width: 32%;
   border-radius: 8px;
   background: #222325;
+  transition: all var(--transition-duration) var(--transition-timing-function);
 }
 @media (max-width: 900px) {
   .reviews__item {
     width: 100%;
   }
+}
+
+.reviews__item * {
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+.reviews__item:hover {
+  background-color: var(--accent-color);
+}
+.reviews__item:hover * {
+  color: var(--white-color);
+}
+.reviews__item:hover .reviews__item-line {
+  background-color: var(--white-color);
 }
 
 .reviews__item-title {
@@ -1572,6 +1587,7 @@ a {
   height: 1px;
   margin-bottom: 12px;
   background-color: var(--grey-color);
+  transition: all var(--transition-duration) var(--transition-timing-function);
 }
 
 .portfolio {
