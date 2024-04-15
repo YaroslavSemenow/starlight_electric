@@ -3,13 +3,13 @@
 
 .footer-top__wrapper {
   background-color: var(--black-color);
-  background-image: url(../../images/footer-flash.svg);
+  background-image: url(../images/footer-flash.svg);
   background-size: contain;
   background-position: right 82px center;
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
-    background-image: url(../../images/footer-flash-mob.svg);
+    background-image: url(../images/footer-flash-mob.svg);
     background-position: right 20px top 36px;
   }
 }

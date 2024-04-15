@@ -462,14 +462,14 @@ a {
 
 .footer-top__wrapper {
   background-color: var(--black-color);
-  background-image: url(../../images/footer-flash.svg);
+  background-image: url(../images/footer-flash.svg);
   background-size: contain;
   background-position: right 82px center;
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .footer-top__wrapper {
-    background-image: url(../../images/footer-flash-mob.svg);
+    background-image: url(../images/footer-flash-mob.svg);
     background-position: right 20px top 36px;
   }
 }
@@ -946,7 +946,7 @@ a {
 }
 
 .hero__wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../../../images/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1121,15 +1121,15 @@ a {
 }
 
 .services__item-inner--1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../../../images/services/1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../images/services/1.jpg);
 }
 
 .services__item-inner--2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../../../images/services/2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../images/services/2.jpg);
 }
 
 .services__item-inner--3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../../../images/services/3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.9) 100%), url(../images/services/3.jpg);
 }
 
 .services__item-icon {
@@ -1437,7 +1437,7 @@ a {
 }
 @media (min-width: 900px) {
   .reviews {
-    background-image: url(../../../images/reviews-img.svg);
+    background-image: url(../images/reviews-img.svg);
     background-size: 421px 421px;
     background-position: right top;
     background-repeat: no-repeat;
