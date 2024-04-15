@@ -1,0 +1,123 @@
+.questions__wrapper {
+  position: relative;
+}
+
+.questions__img-left {
+  position: absolute;
+  left: 0;
+  bottom: 448px;
+}
+
+.questions__img-right {
+  position: absolute;
+  right: 0;
+  bottom: 113px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 100px;
+
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding-bottom: 150px;
+  }
+}
+
+.questions__title {
+  max-width: 424px;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.questions__item {
+  padding: 24px 40px 15px;
+  margin-bottom: 24px;
+  width: 1096px;
+
+  border: 1px solid #e5e5e9;
+  background-color: var(--white-color);
+
+  cursor: pointer;
+
+  &:hover {
+    .questions__item-icon {
+      background-color: var(--accent-color);
+    }
+
+    .questions__item-icon path {
+      fill: var(--white-color);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.questions__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.questions__item-text {
+  color: #2f3639;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.questions__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+
+  border-radius: 50%;
+  background-color: var(--light-grey-color);
+
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+.questions__item-icon path {
+  transition: all var(--transition-duration) var(--transition-timing-function);
+}
+
+.questions__item-answer {
+  max-height: 0;
+  padding-top: 15px;
+
+  transform-origin: top center;
+  transform: scale(1, 0);
+
+  transition: max-height 300ms cubic-bezier(0.24, 1.23, 0.82, 0.8),
+    transform 250ms var(--transition-timing-function);
+}
+
+.questions__item.is-open {
+  .questions__item-answer {
+    transform: scale(1, 1);
+
+    max-height: 250px;
+
+    transition: max-height 300ms cubic-bezier(0.24, 1.23, 0.82, 0.8),
+      transform 250ms var(--transition-timing-function);
+  }
+}

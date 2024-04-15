@@ -97,7 +97,7 @@
   });
 })();
 
-// кастомний чекбокс
+// =================== кастомний чекбокс ==========================
 
 (function toggleCheckbox() {
   const checkboxArr = document.querySelectorAll("form__checkbox");
@@ -111,6 +111,35 @@
       } else {
         checkbox.classList.remove("checked");
       }
+    });
+  });
+})();
+
+// =================== accordion в секції questions ==========================
+
+(function accordionQuestions() {
+  const itemArr = document.querySelectorAll(".questions__item");
+
+  if (!itemArr?.length) return;
+
+  itemArr.forEach((item) => {
+    const icon = item.querySelector(".questions__item-icon");
+
+    item.addEventListener("click", () => {
+      item.classList.toggle("is-open");
+
+      if (item.classList.contains("is-open")) {
+        
+
+        icon.innerHTML = ` <span style="width: 9px; height: 2px; background: #85929A;"></span>`
+
+      } else {
+        icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+        <path d="M1 6.75H11V5.25H1V6.75ZM5.25 1L5.25 11H6.75L6.75 1L5.25 1Z" fill="#85929A"/>
+        </svg>`
+      }
+
+      
     });
   });
 })();

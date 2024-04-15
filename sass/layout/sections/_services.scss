@@ -176,6 +176,7 @@
 
 .services__item-accordion {
   position: absolute;
+  z-index: 1;
   top: 0;
 
   max-height: 0;

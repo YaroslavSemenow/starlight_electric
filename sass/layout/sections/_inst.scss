@@ -1,0 +1,160 @@
+.inst-and-questions-wrapper {
+  background-image: linear-gradient(
+    var(--white-color) 0%,
+    var(--white-color) 305px,
+    #f4f8fa 305px,
+    #f4f8fa 100%
+  );
+}
+
+.inst {
+  padding-bottom: 100px;
+}
+
+.inst__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+
+.inst__title {
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.inst__header-link {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.inst__header-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
+
+  border-radius: 50%;
+  background-color: var(--light-grey-color);
+}
+
+.inst__header-link-text {
+  color: var(--black-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inst__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px 25px;
+  grid-template-areas:
+    "t1 t1 t2 t2 t3 t4 t7 t7"
+    "t1 t1 t2 t2 t5 t6 t7 t7";
+  .t1 {
+    grid-area: t1;
+    max-height: 301px;
+  }
+  .t2 {
+    grid-area: t2;
+    max-height: 301px;
+  }
+  .t3 {
+    grid-area: t3;
+    max-height: 138px;
+  }
+  .t4 {
+    grid-area: t4;
+    max-height: 138px;
+  }
+  .t5 {
+    grid-area: t5;
+    max-height: 138px;
+  }
+  .t6 {
+    grid-area: t6;
+    max-height: 138px;
+  }
+  .t7 {
+    grid-area: t7;
+    max-height: 301px;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+    grid-template-areas:
+      "t1 t2"
+      "t3 t4";
+
+    .t1 {
+      grid-area: t1;
+      max-height: 301px;
+    }
+    .t2 {
+      grid-area: t2;
+      max-height: 301px;
+    }
+    .t3 {
+      grid-area: t3;
+      max-height: 301px;
+    }
+    .t4 {
+      grid-area: t4;
+      max-height: 301px;
+    }
+
+    .t5,
+    .t6,
+    .t7 {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-template-areas:
+      "t1 t2"
+      "t3 t4";
+
+    .t1 {
+      grid-area: t1;
+      max-height: 160px;
+    }
+    .t2 {
+      grid-area: t2;
+      max-height: 160px;
+    }
+    .t3 {
+      grid-area: t3;
+      max-height: 160px;
+    }
+    .t4 {
+      grid-area: t4;
+      max-height: 160px;
+    }
+  }
+}
