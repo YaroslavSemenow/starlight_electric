@@ -57,7 +57,12 @@
   }
 }
 
+
 .portfolio__gallery {
+  display: none;
+  }
+
+.portfolio__gallery.selected {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
