@@ -83,7 +83,7 @@
   line-height: 130%;
   white-space: nowrap;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -92,7 +92,8 @@
   }
 }
 
-.footer-bottom > span {
+.footer-bottom > span,
+.footer-bottom > a {
   display: flex;
   align-items: center;
 }

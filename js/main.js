@@ -207,43 +207,55 @@
 // =================== до/після в секції comparison ==========================
 
 $(document).ready(function () {
-  $(".comparison__first-divider").draggable({
-    axis: "x",
-    containment: "parent",
-    drag: function (event, ui) {
-      var position = ui.position.left;
-      var containerWidth = $(".comparison__first").width();
-      var dividerWidth = $(this).width();
-      var maxWidth = containerWidth - dividerWidth;
+  var handleDrag = function (position) {
+    var containerWidth = $(".comparison__first").width();
+    var dividerWidth = $(".comparison__first-divider").width();
+    var maxWidth = containerWidth - dividerWidth;
 
-      if (position < 0) {
-        position = 0;
-      } else if (position > maxWidth) {
-        position = maxWidth;
-      }
+    if (position < 0) {
+      position = 0;
+    } else if (position > maxWidth) {
+      position = maxWidth;
+    }
 
-      $(".comparison__first-before").css("flex", "0 0 " + position + "px");
-    },
+    $(".comparison__first-before").css("flex", "0 0 " + position + "px");
+    $(".comparison__first-divider").css("left", position); // Оновлюємо позицію важеля
+  };
+
+  $(".comparison__first-divider").on("mousedown touchstart", function (event) {
+    event.preventDefault(); // Попереднє заборонення стандартної поведінки для подій тачскріна
+    var startX = (event.type === 'mousedown') ? event.pageX : event.originalEvent.touches[0].pageX;
+    var initialPosition = $(".comparison__first-divider").position().left;
+
+    $(document).on("mousemove touchmove", function (event) {
+      var x = (event.type === 'mousemove') ? event.pageX : event.originalEvent.touches[0].pageX;
+      var newPosition = initialPosition + x - startX;
+      handleDrag(newPosition);
+    });
+
+    $(document).on("mouseup touchend", function () {
+      $(document).off("mousemove touchmove");
+      $(document).off("mouseup touchend");
+    });
   });
 });
 
+// =================== відправка форми ==========================
 
-$(document).ready(function(){
-  $('#contactForm').submit(function(e){
-console.log("sdfsfsd");
-
-      e.preventDefault(); // Зупиняємо стандартну відправку форми
-      var formData = $(this).serialize(); // Збираємо дані з форми
-      $.ajax({
-          type: 'POST',
-          url: 'send_email.php',
-          data: formData,
-          success: function(response){
-              $('#response').html(response); // Виводимо відповідь сервера в блок з id "response"
-          },
-          error: function(){
-              $('#response').html('Помилка при відправці повідомлення');
-          }
-      });
-  });
+document.querySelector("#contactForm").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+  
+  var formData = new FormData(this); 
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "send_email.php", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        document.querySelector("#response").innerHTML = xhr.responseText; // Виводимо відповідь сервера в блок з id "response"
+      } else {
+        document.querySelector("#response").innerHTML = "Помилка при відправці повідомлення";
+      }
+    }
+  };
+  xhr.send(formData);
 });

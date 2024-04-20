@@ -47,6 +47,12 @@
 
   background-color: var(--accent-color);
   border-radius: 50px;
+
+  transition: background-color 0.3s ease-in;
+}
+
+.contact-button:hover {
+  background-color: var(--accent-color-2);
 }
 
 .location-link {
@@ -55,4 +61,21 @@
   gap: 10px;
 
   color: var(--white-color);
+}
+
+.link,
+.link span,
+.link p,
+.link path {
+  transition:
+    color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.link:hover,
+.link:hover span,
+.link:hover p,
+.link:hover path {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }

@@ -34,6 +34,12 @@
   }
 }
 
+.inst__header-link:hover {
+  .inst__header-link-text {
+    color: var(--accent-color);
+  }
+}
+
 .inst__header-link-icon {
   display: flex;
   align-items: center;
@@ -53,6 +59,9 @@
   font-size: 22px;
   font-weight: 700;
   line-height: normal;
+
+  
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .inst__gallery {

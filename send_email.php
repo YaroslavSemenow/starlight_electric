@@ -1,18 +1,13 @@
 <?php
 $name = $_POST['name'];
-// $email = $_POST['email'];
-// $message = $_POST['message'];
 
-$to = 'yaryk2013@gmail.com'; // Змініть на свою електронну адресу
+$to = 'yaryk2013@gmail.com';
 $subject = 'Нове повідомлення від ' . $name;
 $body = 'From: ' . $name . "\r\n";
-// $body .= 'Email: ' . $email . "\r\n";
-// $body .= 'Message: ' . $message;
-$mail_sent = mail($to, $subject, $body);
+$mailSent = mail($to, $subject, $body);
 
-if ($mail_sent) {
+if ($mailSent) {
     echo 'Повідомлення відправлено успішно';
 } else {
     header("HTTP/1.1 500 Internal Server Error");
 }
-?>

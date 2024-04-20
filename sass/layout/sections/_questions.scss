@@ -14,6 +14,14 @@
   bottom: 113px;
 }
 
+.questions__img-left,
+.questions__img-right {
+  @media (max-width:1550px) {
+    display: none;
+  }
+}
+
+
 .questions {
   display: flex;
   flex-direction: column;

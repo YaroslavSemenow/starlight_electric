@@ -36,4 +36,9 @@
 
 .hero__buttons-link {
   color: var(--white-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.hero__buttons-link:hover {
+  color: var(--accent-color);
 }
