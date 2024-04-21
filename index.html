@@ -936,9 +936,6 @@
             </p>
           </div>
           <div class="help-second">
-            <!-- <?php if (isset($response)) : ?>
-        <p><?php echo $response; ?></p>
-    <?php endif; ?> -->
             <form class="form" action="api/send-email.php" method="POST">
               <input type="text" placeholder="Name" name="name" />
               <input type="text" placeholder="Email" name="email" />
@@ -985,6 +982,8 @@
                   >
                 </div>
               </div>
+
+              <div class="form__response"></div>
             </form>
           </div>
           <div class="help-third">
@@ -3261,6 +3260,8 @@
                     >
                   </div>
                 </div>
+
+                <div class="form__response"></div>
               </form>
             </div>
           </div>
@@ -3409,18 +3410,6 @@
           <button class="modal__close-button btn" data-order-modal-close>
             <img src="" alt="" />
           </button>
-          <form class="form modal-order__form">
-            <div>
-              <button class="button consultation__btn" type="submit">
-                <span>Поставити запитання</span>
-              </button>
-            </div>
-
-            <p class="form__help-text">
-              Натискаючи кнопку “Поставити запитання” ви автоматично даєте згоду
-              на обробку персональних даних
-            </p>
-          </form>
         </div>
       </div>
     </div> -->
@@ -3597,13 +3586,6 @@
       </div>
     </div>
     <!-- end mobile-menu -->
-
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br /><br />
-      <input type="submit" value="Send" />
-    </form>
-    <div id="response"></div>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="./plugins/lightbox/lightbox.js"></script>

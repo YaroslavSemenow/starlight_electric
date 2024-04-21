@@ -78,3 +78,15 @@
   color: var(--accent-color);
   background-color: transparent;
 }
+
+.form__response {
+  padding: 10px;
+}
+
+.form__response--success {
+  color: #00eb1c;
+}
+
+.form__response--error {
+  color: rgb(255, 7, 7);
+}

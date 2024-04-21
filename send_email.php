@@ -7,7 +7,7 @@ $body = 'From: ' . $name . "\r\n";
 $mailSent = mail($to, $subject, $body);
 
 if ($mailSent) {
-    echo 'Повідомлення відправлено успішно';
+    echo 'The message was sent successfully';
 } else {
     header("HTTP/1.1 500 Internal Server Error");
 }

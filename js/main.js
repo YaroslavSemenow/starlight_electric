@@ -224,11 +224,17 @@ $(document).ready(function () {
 
   $(".comparison__first-divider").on("mousedown touchstart", function (event) {
     event.preventDefault(); // Попереднє заборонення стандартної поведінки для подій тачскріна
-    var startX = (event.type === 'mousedown') ? event.pageX : event.originalEvent.touches[0].pageX;
+    var startX =
+      event.type === "mousedown"
+        ? event.pageX
+        : event.originalEvent.touches[0].pageX;
     var initialPosition = $(".comparison__first-divider").position().left;
 
     $(document).on("mousemove touchmove", function (event) {
-      var x = (event.type === 'mousemove') ? event.pageX : event.originalEvent.touches[0].pageX;
+      var x =
+        event.type === "mousemove"
+          ? event.pageX
+          : event.originalEvent.touches[0].pageX;
       var newPosition = initialPosition + x - startX;
       handleDrag(newPosition);
     });
@@ -242,20 +248,36 @@ $(document).ready(function () {
 
 // =================== відправка форми ==========================
 
-document.querySelector("#contactForm").addEventListener("submit", function(e) {
-  e.preventDefault(); 
-  
-  var formData = new FormData(this); 
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "send_email.php", true);
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        document.querySelector("#response").innerHTML = xhr.responseText; // Виводимо відповідь сервера в блок з id "response"
-      } else {
-        document.querySelector("#response").innerHTML = "Помилка при відправці повідомлення";
-      }
-    }
-  };
-  xhr.send(formData);
-});
+(() => {
+  const forms = document.querySelectorAll(".form");
+
+  if (!forms?.length) return;
+
+  forms.forEach((form) => {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const responseElement = form.querySelector(".form__response");
+
+      const formData = new FormData(this);
+      const xhr = new XMLHttpRequest();
+
+      xhr.open("POST", "send_email.php", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            responseElement.innerHTML = `<span class="form__response--success">${xhr.responseText}</span>`;
+
+            form.reset();
+
+            setTimeout(() => {
+              responseElement.innerHTML = "";
+            }, 7000);
+          } else {
+            responseElement.innerHTML = `<span class="form__response--error">Error sending message</span>`;
+          }
+        }
+      };
+      xhr.send(formData);
+    });
+  });
+})();
